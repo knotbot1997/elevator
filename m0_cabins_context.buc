@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524319951064" org.eventb.texttools.text_representation="context m0_cabins_context&#10;sets CABIN&#10;&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_N-6O4EVjEeiJqcMqFk23hg" org.eventb.core.identifier="CABIN"/>
+</org.eventb.core.contextFile>
