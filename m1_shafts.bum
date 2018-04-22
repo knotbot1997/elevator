@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524218504843" org.eventb.texttools.text_representation="machine m1_shafts&#10;&#10;events&#10;  event INITIALISATION&#10;  LETMECONFLICT&#10;  end&#10;end&#10;" version="5">
-<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524385810222" org.eventb.texttools.text_representation="machine m1_shafts&#10;refines m0_cabins&#10;sees m1_shafts_context&#10;&#10;variables&#10;&#9;cabins&#10;&#9;cabinPositions&#10;&#9;maxFloor&#10;&#9;upShaftCabins&#10;&#9;downShaftCabins&#10;&#10;invariants&#10;&#9;@inv6: ∀c1·c1∈upShaftCabins ⇒  (∀c2·c2∈upShaftCabins ∧ (c1≠c2) ⇒ cabinPositions(c1)≠cabinPositions(c2))&#10;&#9;@inv7: ∀c1·c1∈downShaftCabins ⇒  (∀c2·c2∈downShaftCabins ∧ (c1≠c2) ⇒ cabinPositions(c1)≠cabinPositions(c2))&#10;&#9;@inv8: upShaftCabins ∪ downShaftCabins = cabins&#10;&#9;@inv9: upShaftCabins ⊆cabins&#10;&#9;@inv10: downShaftCabins ⊆ cabins&#10;&#9;@inv11: upShaftCabins ∩ downShaftCabins = ∅&#10;&#10;events&#10;&#9;event INITIALISATION extends INITIALISATION&#10;&#9;then&#10;&#9;&#9;@act4: upShaftCabins ≔ ∅&#10;&#9;&#9;@act5: downShaftCabins ≔ ∅&#10;&#9;end&#10;&#10;&#9;event addCabin refines addCabin&#10;&#9;any c&#10;&#9;where&#10;&#9;  &#9;@grd2: c ∉ cabins&#10;&#9;&#9;@grd3: ∀p·p∈upShaftCabins⇒cabinPositions(p)≠0&#10;&#9;&#9;@grd4: c ∉ upShaftCabins&#10;&#9;&#9;@grd5: c ∉downShaftCabins&#10;&#9;then&#10;&#9;    @act1: cabins ≔  cabins ∪ {c}&#10;    &#9;@act2: cabinPositions (c) ≔ 0&#10;&#9;&#9;@act3: upShaftCabins ≔ upShaftCabins ∪ {c}&#10;&#9;end&#10;&#10;&#9;event CabinMovesUp extends CabinMovesUp&#10;&#9;end&#10;&#10;&#9;event CabinMovesDown extends CabinMovesDown&#10;&#9;end&#10;&#10;&#10;end" version="5">
+<org.eventb.core.refinesMachine name="_tsQVsEX4EeiJqcMqFk23hg" org.eventb.core.target="m0_cabins"/>
+<org.eventb.core.seesContext name="_tsQ8wEX4EeiJqcMqFk23hg" org.eventb.core.target="m1_shafts_context"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_3x3TwEX4EeiJqcMqFk23hg" org.eventb.core.assignment="upShaftCabins ≔ ∅" org.eventb.core.label="act4:"/>
+<org.eventb.core.action name="_3x3TwUX4EeiJqcMqFk23hg" org.eventb.core.assignment="downShaftCabins ≔ ∅" org.eventb.core.label="act5:"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_tsSK4EX4EeiJqcMqFk23hg" org.eventb.core.identifier="cabins"/>
+<org.eventb.core.variable name="_tsSK4UX4EeiJqcMqFk23hg" org.eventb.core.identifier="cabinPositions"/>
+<org.eventb.core.variable name="_tsSx8EX4EeiJqcMqFk23hg" org.eventb.core.identifier="maxFloor"/>
+<org.eventb.core.variable name="_tsSx8UX4EeiJqcMqFk23hg" org.eventb.core.identifier="upShaftCabins"/>
+<org.eventb.core.variable name="_tsSx8kX4EeiJqcMqFk23hg" org.eventb.core.identifier="downShaftCabins"/>
+<org.eventb.core.invariant name="_tsTZAEX4EeiJqcMqFk23hg" org.eventb.core.label="inv6:" org.eventb.core.predicate="∀c1·c1∈upShaftCabins ⇒  (∀c2·c2∈upShaftCabins ∧ (c1≠c2) ⇒ cabinPositions(c1)≠cabinPositions(c2))"/>
+<org.eventb.core.invariant name="_tsTZAUX4EeiJqcMqFk23hg" org.eventb.core.label="inv7:" org.eventb.core.predicate="∀c1·c1∈downShaftCabins ⇒  (∀c2·c2∈downShaftCabins ∧ (c1≠c2) ⇒ cabinPositions(c1)≠cabinPositions(c2))"/>
+<org.eventb.core.invariant name="_tsUAEEX4EeiJqcMqFk23hg" org.eventb.core.label="inv8:" org.eventb.core.predicate="upShaftCabins ∪ downShaftCabins = cabins"/>
+<org.eventb.core.invariant name="_tsUAEUX4EeiJqcMqFk23hg" org.eventb.core.label="inv9:" org.eventb.core.predicate="upShaftCabins ⊆cabins"/>
+<org.eventb.core.invariant name="_tsUnIEX4EeiJqcMqFk23hg" org.eventb.core.label="inv10:" org.eventb.core.predicate="downShaftCabins ⊆ cabins"/>
+<org.eventb.core.invariant name="_tsVOMEX4EeiJqcMqFk23hg" org.eventb.core.label="inv11:" org.eventb.core.predicate="upShaftCabins ∩ downShaftCabins = ∅"/>
+<org.eventb.core.event name="_tsVOMUX4EeiJqcMqFk23hg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="addCabin">
+<org.eventb.core.refinesEvent name="_tsV1QEX4EeiJqcMqFk23hg" org.eventb.core.target="addCabin"/>
+<org.eventb.core.parameter name="_Ux-iEEX7EeiJqcMqFk23hg" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name="_9J0BIEX-EeizcIpatjpnVg" org.eventb.core.label="grd2:" org.eventb.core.predicate="c ∉ cabins"/>
+<org.eventb.core.guard name="_Ux-iEUX7EeiJqcMqFk23hg" org.eventb.core.label="grd3:" org.eventb.core.predicate="∀p·p∈upShaftCabins⇒cabinPositions(p)≠0"/>
+<org.eventb.core.guard name="_Ux_JIEX7EeiJqcMqFk23hg" org.eventb.core.label="grd4:" org.eventb.core.predicate="c ∉ upShaftCabins"/>
+<org.eventb.core.guard name="_yPRtkUX7EeizcIpatjpnVg" org.eventb.core.label="grd5:" org.eventb.core.predicate="c ∉downShaftCabins"/>
+<org.eventb.core.action name="_jCn10EX-EeizcIpatjpnVg" org.eventb.core.assignment="cabins ≔  cabins ∪ {c}" org.eventb.core.label="act1:"/>
+<org.eventb.core.action name="_jCoc4EX-EeizcIpatjpnVg" org.eventb.core.assignment="cabinPositions (c) ≔ 0" org.eventb.core.label="act2:"/>
+<org.eventb.core.action name="_Ux_JIUX7EeiJqcMqFk23hg" org.eventb.core.assignment="upShaftCabins ≔ upShaftCabins ∪ {c}" org.eventb.core.label="act3:"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tsV1QUX4EeiJqcMqFk23hg" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinMovesUp">
+<org.eventb.core.refinesEvent name="_tsWcUEX4EeiJqcMqFk23hg" org.eventb.core.target="CabinMovesUp"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tsWcUUX4EeiJqcMqFk23hg" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinMovesDown">
+<org.eventb.core.refinesEvent name="_tsXDYEX4EeiJqcMqFk23hg" org.eventb.core.target="CabinMovesDown"/>
+</org.eventb.core.event>
 </org.eventb.core.machineFile>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/Elevator/m0_cabins_context.bcc|org.eventb.core.scContextFile#m0_cabins_context" org.eventb.core.source="/Elevator/m1_shafts_context.buc|org.eventb.core.contextFile#m1_shafts_context|org.eventb.core.extendsContext#_g_D2gEWZEeiJqcMqFk23hg"/>
+<org.eventb.core.scInternalContext name="m0_cabins_context">
+<org.eventb.core.scCarrierSet name="CABIN" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.carrierSet#_N-6O4EVjEeiJqcMqFk23hg" org.eventb.core.type="ℙ(CABIN)"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scCarrierSet name="SHAFT" org.eventb.core.source="/Elevator/m1_shafts_context.buc|org.eventb.core.contextFile#m1_shafts_context|org.eventb.core.carrierSet#_yNmbkEWYEeiJqcMqFk23hg" org.eventb.core.type="ℙ(SHAFT)"/>
+</org.eventb.core.scContextFile>

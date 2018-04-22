@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524321331549" org.eventb.texttools.text_representation="machine m0_cabins&#10;sees&#10;&#9;m0_cabins_context&#10;variables&#10;&#9;cabins&#10;&#9;cabinPositions&#10;&#9;maxFloor&#10;invariants&#10;&#9;@inv1: cabins ⊆ CABIN&#10;&#9;@inv2: cabinPositions ∈ cabins ↣ ℕ&#10;&#9;@inv3: maxFloor ∈ ℕ&#10;events&#10;  event INITIALISATION&#10;  then&#10;  &#9;@act1: cabins ≔ ∅&#10;  &#9;@act2: cabinPositions ≔ ∅&#10;  &#9;@act3: maxFloor ≔ 4&#10;  end&#10;&#10;  event CabinMovesUp&#10;  any c&#10;  where&#10;  &#9;@grd1: c ∈ cabins&#10;  &#9;@grd2: cabinPositions(c) &lt; maxFloor&#10;  &#9;@grd3: ∀p·p∈ran(cabinPositions) ⇒  p ≠ cabinPositions(c)+1&#10;  then&#10;  &#9;@act1: cabinPositions(c) ≔  cabinPositions(c)+1&#10;  end&#10;&#10;  event CabinMovesDown&#10;  any c&#10;  where&#10;  &#9;@grd1: c ∈ cabins&#10;  &#9;@grd2: cabinPositions(c) &gt; 0&#10;  &#9;@grd3: ∀p·p∈ran(cabinPositions) ⇒  p ≠ cabinPositions(c)-1&#10;  then&#10;  &#9;@act1: cabinPositions(c) ≔ cabinPositions(c)−1&#10;  end&#10;&#10;  event addCabin&#10;  any c&#10;  where&#10;  &#9;@grd1: c ∈ CABIN&#10;  &#9;@grd2: c ∉ cabins&#10;  &#9;@grd3: ∀p·p∈ran(cabinPositions) ⇒  p ≠ 0&#10;  then&#10;    @act1: cabins ≔  cabins ∪ {c}&#10;    @act2: cabinPositions ≔  cabinPositions ∪  {c ↦ 0}&#10;  end&#10;&#10;end&#10;" version="5">
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524384091832" org.eventb.texttools.text_representation="machine m0_cabins&#10;sees&#10;&#9;m0_cabins_context&#10;variables&#10;&#9;cabins&#10;&#9;cabinPositions&#10;&#9;maxFloor&#10;invariants&#10;&#9;@inv1: cabins ⊆ CABIN&#10;&#9;@inv2: cabinPositions ∈ cabins → ℕ&#10;&#9;@inv3: maxFloor ∈ ℕ&#10;&#9;@inv4: maxFloor&gt;0&#10;&#9;@inv5: ∀c·c∈cabins⇒cabinPositions(c)≥0 ∧ cabinPositions(c)≤maxFloor&#10;&#9;@inv6: ∀c·c∈cabins⇒c∈dom(cabinPositions)&#10;&#9;@inv7: ∀c1·c1∈cabins ⇒  (∀c2·c2∈cabins ∧ (c1≠c2) ⇒ cabinPositions(c1)≠cabinPositions(c2))&#10;events&#10;  event INITIALISATION&#10;  then&#10;  &#9;@act1: cabins ≔ ∅&#10;  &#9;@act2: cabinPositions ≔ ∅&#10;  &#9;@act3: maxFloor ≔ 4&#10;  end&#10;&#10;  event CabinMovesUp&#10;  any c&#10;  where&#10;  &#9;@grd1: c ∈ cabins&#10;  &#9;@grd2: cabinPositions(c) &lt; maxFloor&#10;  &#9;@grd3: ∀p·(p∈cabins∧p≠c) ⇒  cabinPositions(p) ≠ (cabinPositions(c)+1)&#10;  then&#10;  &#9;@act1: cabinPositions(c) ≔  cabinPositions(c)+1&#10;  end&#10;&#10;  event CabinMovesDown&#10;  any c&#10;  where&#10;  &#9;@grd1: c ∈ cabins&#10;  &#9;@grd2: cabinPositions(c) &gt; 0&#10;  &#9;@grd3: ∀p·(p∈cabins∧p≠c)⇒  cabinPositions(p) ≠ (cabinPositions(c)−1)&#10;  then&#10;  &#9;@act1: cabinPositions(c) ≔ cabinPositions(c)−1&#10;  end&#10;&#10;  event addCabin&#10;  any c&#10;  where&#10;  &#9;@grd1: c ∈ CABIN&#10;  &#9;@grd2: c ∉ cabins&#10;  &#9;@grd3: ∀p·p∈ran(cabinPositions) ⇒  p ≠ 0&#10;  then&#10;    @act1: cabins ≔  cabins ∪ {c}&#10;    @act2: cabinPositions (c) ≔ 0&#10;  end&#10;&#10;end&#10;" version="5">
 <org.eventb.core.seesContext name="_eNtjUEVkEeiJqcMqFk23hg" org.eventb.core.target="m0_cabins_context"/>
 <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
 <org.eventb.core.action name="_CAjUkEVlEeiJqcMqFk23hg" org.eventb.core.assignment="cabins ≔ ∅" org.eventb.core.label="act1:"/>
@@ -9,29 +9,33 @@
 <org.eventb.core.variable name="_eNuKYEVkEeiJqcMqFk23hg" org.eventb.core.identifier="cabins"/>
 <org.eventb.core.variable name="_eNuxcEVkEeiJqcMqFk23hg" org.eventb.core.identifier="cabinPositions"/>
 <org.eventb.core.invariant name="_eNuxcUVkEeiJqcMqFk23hg" org.eventb.core.label="inv1:" org.eventb.core.predicate="cabins ⊆ CABIN"/>
-<org.eventb.core.invariant name="_eNv_kEVkEeiJqcMqFk23hg" org.eventb.core.label="inv2:" org.eventb.core.predicate="cabinPositions ∈ cabins ↣ ℕ"/>
+<org.eventb.core.invariant name="_eNv_kEVkEeiJqcMqFk23hg" org.eventb.core.label="inv2:" org.eventb.core.predicate="cabinPositions ∈ cabins → ℕ"/>
 <org.eventb.core.event name="_eNwmoEVkEeiJqcMqFk23hg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CabinMovesUp">
 <org.eventb.core.parameter name="_GT4VgEVmEeiJqcMqFk23hg" org.eventb.core.identifier="c"/>
 <org.eventb.core.guard name="_GT48kEVmEeiJqcMqFk23hg" org.eventb.core.label="grd1:" org.eventb.core.predicate="c ∈ cabins"/>
 <org.eventb.core.guard name="_Zcdv8EVmEeiJqcMqFk23hg" org.eventb.core.label="grd2:" org.eventb.core.predicate="cabinPositions(c) &lt; maxFloor"/>
-<org.eventb.core.guard name="_1COgIEVoEeiJqcMqFk23hg" org.eventb.core.label="grd3:" org.eventb.core.predicate="∀p·p∈ran(cabinPositions) ⇒  p ≠ cabinPositions(c)+1"/>
+<org.eventb.core.guard name="_1COgIEVoEeiJqcMqFk23hg" org.eventb.core.label="grd3:" org.eventb.core.predicate="∀p·(p∈cabins∧p≠c) ⇒  cabinPositions(p) ≠ (cabinPositions(c)+1)"/>
 <org.eventb.core.action name="_GT5joEVmEeiJqcMqFk23hg" org.eventb.core.assignment="cabinPositions(c) ≔  cabinPositions(c)+1" org.eventb.core.label="act1:"/>
 </org.eventb.core.event>
 <org.eventb.core.event name="_eNwmoUVkEeiJqcMqFk23hg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CabinMovesDown">
 <org.eventb.core.parameter name="_QI8WIEVmEeiJqcMqFk23hg" org.eventb.core.identifier="c"/>
 <org.eventb.core.guard name="_QI8WIUVmEeiJqcMqFk23hg" org.eventb.core.label="grd1:" org.eventb.core.predicate="c ∈ cabins"/>
 <org.eventb.core.guard name="_b3PJQEVmEeiJqcMqFk23hg" org.eventb.core.label="grd2:" org.eventb.core.predicate="cabinPositions(c) &gt; 0"/>
-<org.eventb.core.guard name="_3KzWMEVoEeiJqcMqFk23hg" org.eventb.core.label="grd3:" org.eventb.core.predicate="∀p·p∈ran(cabinPositions) ⇒  p ≠ cabinPositions(c)−1"/>
+<org.eventb.core.guard name="_3KzWMEVoEeiJqcMqFk23hg" org.eventb.core.label="grd3:" org.eventb.core.predicate="∀p·(p∈cabins∧p≠c)⇒  cabinPositions(p) ≠ (cabinPositions(c)−1)"/>
 <org.eventb.core.action name="_QI89MEVmEeiJqcMqFk23hg" org.eventb.core.assignment="cabinPositions(c) ≔ cabinPositions(c)−1" org.eventb.core.label="act1:"/>
-</org.eventb.core.event>
-<org.eventb.core.event name="_CAmX4EVlEeiJqcMqFk23hg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="addCabin">
-<org.eventb.core.parameter name="_iiUWoEVlEeiJqcMqFk23hg" org.eventb.core.identifier="c"/>
-<org.eventb.core.guard name="_iiUWoUVlEeiJqcMqFk23hg" org.eventb.core.label="grd1:" org.eventb.core.predicate="c ∈ CABIN"/>
-<org.eventb.core.guard name="_lsTw8EVmEeiJqcMqFk23hg" org.eventb.core.label="grd2:" org.eventb.core.predicate="c ∉ cabins"/>
-<org.eventb.core.guard name="_chwbAEVoEeiJqcMqFk23hg" org.eventb.core.label="grd3:" org.eventb.core.predicate="∀p·p∈ran(cabinPositions) ⇒  p ≠ 0"/>
-<org.eventb.core.action name="_LLVpIEVlEeiJqcMqFk23hg" org.eventb.core.assignment="cabins ≔  cabins ∪ {c}" org.eventb.core.label="act1:"/>
-<org.eventb.core.action name="_356mUEVlEeiJqcMqFk23hg" org.eventb.core.assignment="cabinPositions ≔  cabinPositions ∪  {c ↦ 0}" org.eventb.core.label="act2:"/>
 </org.eventb.core.event>
 <org.eventb.core.variable name="_U-mdgEVmEeiJqcMqFk23hg" org.eventb.core.identifier="maxFloor"/>
 <org.eventb.core.invariant name="_U-mdgUVmEeiJqcMqFk23hg" org.eventb.core.label="inv3:" org.eventb.core.predicate="maxFloor ∈ ℕ"/>
+<org.eventb.core.invariant name="_589c4EX5EeiJqcMqFk23hg" org.eventb.core.label="inv4:" org.eventb.core.predicate="maxFloor&gt;0"/>
+<org.eventb.core.invariant name="_q24EoEWjEeiJqcMqFk23hg" org.eventb.core.label="inv5:" org.eventb.core.predicate="∀c·c∈cabins⇒cabinPositions(c)≥0 ∧ cabinPositions(c)≤maxFloor"/>
+<org.eventb.core.invariant name="_Q8zZkEX2EeiJqcMqFk23hg" org.eventb.core.label="inv6:" org.eventb.core.predicate="∀c·c∈cabins⇒c∈dom(cabinPositions)"/>
+<org.eventb.core.invariant name="_jAZ60EWnEeiJqcMqFk23hg" org.eventb.core.label="inv7:" org.eventb.core.predicate="∀c1·c1∈cabins ⇒  (∀c2·c2∈cabins ∧ (c1≠c2) ⇒ cabinPositions(c1)≠cabinPositions(c2))"/>
+<org.eventb.core.event name="_7fQEwEWmEeiJqcMqFk23hg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="addCabin">
+<org.eventb.core.parameter name="_7fQEwUWmEeiJqcMqFk23hg" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name="_7fQr0EWmEeiJqcMqFk23hg" org.eventb.core.label="grd1:" org.eventb.core.predicate="c ∈ CABIN"/>
+<org.eventb.core.guard name="_7fQr0UWmEeiJqcMqFk23hg" org.eventb.core.label="grd2:" org.eventb.core.predicate="c ∉ cabins"/>
+<org.eventb.core.guard name="_7fRS4EWmEeiJqcMqFk23hg" org.eventb.core.label="grd3:" org.eventb.core.predicate="∀p·p∈ran(cabinPositions) ⇒  p ≠ 0"/>
+<org.eventb.core.action name="_7fR58EWmEeiJqcMqFk23hg" org.eventb.core.assignment="cabins ≔  cabins ∪ {c}" org.eventb.core.label="act1:"/>
+<org.eventb.core.action name="_7fR58UWmEeiJqcMqFk23hg" org.eventb.core.assignment="cabinPositions (c) ≔ 0" org.eventb.core.label="act2:"/>
+</org.eventb.core.event>
 </org.eventb.core.machineFile>

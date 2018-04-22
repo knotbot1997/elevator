@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524342228069" org.eventb.texttools.text_representation="context m1_shafts_context extends m0_cabins_context&#10;sets SHAFT&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="_g_D2gEWZEeiJqcMqFk23hg" org.eventb.core.target="m0_cabins_context"/>
+<org.eventb.core.carrierSet name="_yNmbkEWYEeiJqcMqFk23hg" org.eventb.core.identifier="SHAFT"/>
+</org.eventb.core.contextFile>
