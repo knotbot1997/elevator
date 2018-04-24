@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="inv6:/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="inv7:/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv6:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv7:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv8:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv9:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv10:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv11:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addCabin/grd3:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addCabin/inv6:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addCabin/inv7:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addCabin/inv8:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addCabin/inv9:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addCabin/inv10:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addCabin/inv11:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addCabin/grd3:/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="CabinMovesUp/inv6:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="CabinMovesUp/inv7:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="CabinMovesDown/inv6:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="CabinMovesDown/inv7:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv4:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv5:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv4:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv6:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv9:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinUpToDown/grd2:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinUpToDown/grd3:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinUpToDown/inv4:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinUpToDown/inv5:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinUpToDown/inv6:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinUpToDown/inv9:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinDownToUp/grd2:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="56" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinDownToUp/grd3:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinDownToUp/inv4:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinDownToUp/inv5:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinDownToUp/inv6:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinDownToUp/inv9:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinMovesUp/grd4:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinMovesUp/inv4:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinMovesUp/inv5:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinMovesDown/grd4:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinMovesDown/inv4:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinMovesDown/inv5:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

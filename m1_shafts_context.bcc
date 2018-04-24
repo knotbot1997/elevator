@@ -2,7 +2,15 @@
 <org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
 <org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/Elevator/m0_cabins_context.bcc|org.eventb.core.scContextFile#m0_cabins_context" org.eventb.core.source="/Elevator/m1_shafts_context.buc|org.eventb.core.contextFile#m1_shafts_context|org.eventb.core.extendsContext#_g_D2gEWZEeiJqcMqFk23hg"/>
 <org.eventb.core.scInternalContext name="m0_cabins_context">
-<org.eventb.core.scCarrierSet name="CABIN" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.carrierSet#_N-6O4EVjEeiJqcMqFk23hg" org.eventb.core.type="ℙ(CABIN)"/>
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1:" org.eventb.core.predicate="partition(CABIN,{cabin1},{cabin2},{cabin3},{cabin4})" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_vtWp0EewEeitPrt4T1qAPA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2:" org.eventb.core.predicate="maxFloor∈ℕ" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_vtWp0UewEeitPrt4T1qAPA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3:" org.eventb.core.predicate="maxFloor=4" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_04J6wEewEeitPrt4T1qAPA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="CABIN" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.carrierSet#_JRD4IEeyEeitPrt4T1qAPA" org.eventb.core.type="ℙ(CABIN)"/>
+<org.eventb.core.scConstant name="cabin1" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.constant#_JRD4IUeyEeitPrt4T1qAPA" org.eventb.core.type="CABIN"/>
+<org.eventb.core.scConstant name="cabin2" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.constant#_JRD4IkeyEeitPrt4T1qAPA" org.eventb.core.type="CABIN"/>
+<org.eventb.core.scConstant name="cabin3" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.constant#_JRD4I0eyEeitPrt4T1qAPA" org.eventb.core.type="CABIN"/>
+<org.eventb.core.scConstant name="cabin4" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.constant#_JRD4JEeyEeitPrt4T1qAPA" org.eventb.core.type="CABIN"/>
+<org.eventb.core.scConstant name="maxFloor" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.constant#_w3I8YEewEeitPrt4T1qAPA" org.eventb.core.type="ℤ"/>
 </org.eventb.core.scInternalContext>
 <org.eventb.core.scCarrierSet name="SHAFT" org.eventb.core.source="/Elevator/m1_shafts_context.buc|org.eventb.core.contextFile#m1_shafts_context|org.eventb.core.carrierSet#_yNmbkEWYEeiJqcMqFk23hg" org.eventb.core.type="ℙ(SHAFT)"/>
 </org.eventb.core.scContextFile>

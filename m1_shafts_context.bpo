@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="2">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poFile org.eventb.core.poStamp="9">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="9">
 <org.eventb.core.poIdentifier name="CABIN" org.eventb.core.type="ℙ(CABIN)"/>
+<org.eventb.core.poIdentifier name="cabin1" org.eventb.core.type="CABIN"/>
+<org.eventb.core.poIdentifier name="cabin2" org.eventb.core.type="CABIN"/>
+<org.eventb.core.poIdentifier name="cabin3" org.eventb.core.type="CABIN"/>
+<org.eventb.core.poIdentifier name="cabin4" org.eventb.core.type="CABIN"/>
+<org.eventb.core.poIdentifier name="maxFloor" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="maxFloos" org.eventb.core.predicate="partition(CABIN,{cabin1},{cabin2},{cabin3},{cabin4})" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_vtWp0EewEeitPrt4T1qAPA"/>
+<org.eventb.core.poPredicate name="maxFloot" org.eventb.core.predicate="maxFloor∈ℕ" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_vtWp0UewEeitPrt4T1qAPA"/>
+<org.eventb.core.poPredicate name="maxFloou" org.eventb.core.predicate="maxFloor=4" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_04J6wEewEeitPrt4T1qAPA"/>
 <org.eventb.core.poIdentifier name="SHAFT" org.eventb.core.type="ℙ(SHAFT)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m1_shafts_context.bpo|org.eventb.core.poFile#m1_shafts_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m1_shafts_context.bpo|org.eventb.core.poFile#m1_shafts_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="9"/>
 </org.eventb.core.poFile>
