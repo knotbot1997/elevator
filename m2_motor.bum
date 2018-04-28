@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524218064483" org.eventb.texttools.text_representation="machine m2_motor&#10;&#10;events&#10;  event INITIALISATION&#10;  XYZ&#10;  end&#10;end&#10;" version="5">
-<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524868851381" org.eventb.texttools.text_representation="machine m2_motor&#10;refines m1_shafts&#10;sees m2_motor_context&#10;&#10;variables&#10;&#9;cabinPositions&#10;&#9;upShaftCabins&#10;&#9;downShaftCabins&#10;&#9;cabinMotors&#10;&#10;invariants&#10;&#9;@inv10: cabinMotors ∈ cabin → MOTOR_STATE&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  then&#10;&#9;@act4: cabinMotors ≔ initialMotorState&#10;  end&#10;&#10;  event MotorStarts&#10;  any&#10;  &#9;c&#10;  where&#10;  &#9;@grd1: c ∈ cabin&#10;  &#9;@grd2: cabinMotors(c) = OFF&#10;  then&#10;  &#9;@act1: cabinMotors(c) ≔ ON&#10;  end&#10;&#10;  event MotorStops&#10;  any&#10;  &#9;c&#10;  where&#10;  &#9;@grd1: c ∈ cabin&#10;  &#9;@grd2: cabinMotors(c) = ON&#10;  then&#10;  &#9;@act1: cabinMotors(c) ≔ OFF&#10;  end&#10;&#10;  event CabinUpToDown extends CabinUpToDown&#10;  where&#10;  &#9;@grd4: cabinMotors(c) = ON&#10;  end&#10;&#10;  event CabinDownToUp extends CabinDownToUp&#10;  where&#10;  &#9;@grd4: cabinMotors(c) = ON&#10;  end&#10;&#10;  event CabinMovesUp extends CabinMovesUp&#10;  where&#10;  &#9;@grd5: cabinMotors(c) = ON&#10;  end&#10;&#10;  event CabinMovesDown extends CabinMovesDown&#10;  where&#10;  &#9;@grd5: cabinMotors(c) = ON&#10;  end&#10;&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="_CmVkAEoMEeiq3NFPgDZfiA" org.eventb.core.target="m1_shafts"/>
+<org.eventb.core.seesContext name="_CmWLEEoMEeiq3NFPgDZfiA" org.eventb.core.target="m2_motor_context"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_TzUuQEopEeiq3NFPgDZfiA" org.eventb.core.assignment="cabinMotors ≔ initialMotorState" org.eventb.core.label="act4:"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_CmWyIEoMEeiq3NFPgDZfiA" org.eventb.core.identifier="cabinPositions"/>
+<org.eventb.core.variable name="_CmWyIUoMEeiq3NFPgDZfiA" org.eventb.core.identifier="upShaftCabins"/>
+<org.eventb.core.variable name="_CmXZMEoMEeiq3NFPgDZfiA" org.eventb.core.identifier="downShaftCabins"/>
+<org.eventb.core.event name="_jGxqNUopEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MotorStops">
+<org.eventb.core.parameter name="_jGxqNkopEeiq3NFPgDZfiA" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name="_jGxqN0opEeiq3NFPgDZfiA" org.eventb.core.label="grd1:" org.eventb.core.predicate="c ∈ cabin"/>
+<org.eventb.core.guard name="_jG0GcEopEeiq3NFPgDZfiA" org.eventb.core.label="grd2:" org.eventb.core.predicate="cabinMotors(c) = ON"/>
+<org.eventb.core.action name="_jG0GcUopEeiq3NFPgDZfiA" org.eventb.core.assignment="cabinMotors(c) ≔ OFF" org.eventb.core.label="act1:"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_9oVvQEonEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinUpToDown">
+<org.eventb.core.refinesEvent name="_9oWWUEonEeiq3NFPgDZfiA" org.eventb.core.target="CabinUpToDown"/>
+<org.eventb.core.guard name="_9oWWUUonEeiq3NFPgDZfiA" org.eventb.core.label="grd4:" org.eventb.core.predicate="cabinMotors(c) = ON"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_9oW9YEonEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinDownToUp">
+<org.eventb.core.refinesEvent name="_9oXkcEonEeiq3NFPgDZfiA" org.eventb.core.target="CabinDownToUp"/>
+<org.eventb.core.guard name="_9oXkcUonEeiq3NFPgDZfiA" org.eventb.core.label="grd4:" org.eventb.core.predicate="cabinMotors(c) = ON"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_9oYLgEonEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinMovesUp">
+<org.eventb.core.refinesEvent name="_9oYLgUonEeiq3NFPgDZfiA" org.eventb.core.target="CabinMovesUp"/>
+<org.eventb.core.guard name="_9oYykEonEeiq3NFPgDZfiA" org.eventb.core.label="grd5:" org.eventb.core.predicate="cabinMotors(c) = ON"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_9oYykUonEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinMovesDown">
+<org.eventb.core.refinesEvent name="_9oZZoEonEeiq3NFPgDZfiA" org.eventb.core.target="CabinMovesDown"/>
+<org.eventb.core.guard name="_9oZZoUonEeiq3NFPgDZfiA" org.eventb.core.label="grd5:" org.eventb.core.predicate="cabinMotors(c) = ON"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_3gntoEooEeiq3NFPgDZfiA" org.eventb.core.identifier="cabinMotors"/>
+<org.eventb.core.invariant name="_BX4GoEopEeiq3NFPgDZfiA" org.eventb.core.label="inv10:" org.eventb.core.predicate="cabinMotors ∈ cabin → MOTOR_STATE"/>
+<org.eventb.core.event name="_jGxqMEopEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MotorStarts">
+<org.eventb.core.parameter name="_jGxqMUopEeiq3NFPgDZfiA" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name="_jGxqMkopEeiq3NFPgDZfiA" org.eventb.core.label="grd1:" org.eventb.core.predicate="c ∈ cabin"/>
+<org.eventb.core.guard name="_jGxqM0opEeiq3NFPgDZfiA" org.eventb.core.label="grd2:" org.eventb.core.predicate="cabinMotors(c) = OFF"/>
+<org.eventb.core.action name="_jGxqNEopEeiq3NFPgDZfiA" org.eventb.core.assignment="cabinMotors(c) ≔ ON" org.eventb.core.label="act1:"/>
+</org.eventb.core.event>
 </org.eventb.core.machineFile>

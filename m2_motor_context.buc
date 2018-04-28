@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524843755400" org.eventb.texttools.text_representation="context m2_motor_context extends m1_shafts_context&#10;constants ON OFF initialMotorState&#10;sets MOTOR_STATE&#10;axioms&#10;&#9;@act1: partition(MOTOR_STATE, {ON}, {OFF})&#10;&#9;@act2: initialMotorState ∈ cabin → MOTOR_STATE&#10;&#9;@act3: ∀c·c∈cabin⇒initialMotorState(c)=OFF&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="_B80iYUoLEeiq3NFPgDZfiA" org.eventb.core.target="m1_shafts_context"/>
+<org.eventb.core.carrierSet name="_4gcSEEoLEeiq3NFPgDZfiA" org.eventb.core.identifier="MOTOR_STATE"/>
+<org.eventb.core.axiom name="_4gcSEUoLEeiq3NFPgDZfiA" org.eventb.core.label="act1:" org.eventb.core.predicate="partition(MOTOR_STATE, {ON}, {OFF})"/>
+<org.eventb.core.constant name="_9xaccEoLEeiq3NFPgDZfiA" org.eventb.core.identifier="ON"/>
+<org.eventb.core.constant name="_9xbDgEoLEeiq3NFPgDZfiA" org.eventb.core.identifier="OFF"/>
+<org.eventb.core.constant name="_OYePIEopEeiq3NFPgDZfiA" org.eventb.core.identifier="initialMotorState"/>
+<org.eventb.core.axiom name="_OYePIUopEeiq3NFPgDZfiA" org.eventb.core.label="act2:" org.eventb.core.predicate="initialMotorState ∈ cabin → MOTOR_STATE"/>
+<org.eventb.core.axiom name="_OYe2MEopEeiq3NFPgDZfiA" org.eventb.core.label="act3:" org.eventb.core.predicate="∀c·c∈cabin⇒initialMotorState(c)=OFF"/>
+</org.eventb.core.contextFile>

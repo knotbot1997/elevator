@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
-<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524869328758" org.eventb.texttools.text_representation="machine m3_door&#10;refines m2_motor&#10;sees m3_door_context&#10;&#10;variables&#10;&#9;cabinPositions&#10;&#9;upShaftCabins&#10;&#9;downShaftCabins&#10;&#9;cabinMotors&#10;&#9;cabinDoors&#10;&#10;invariants&#10;&#9;@inv10: cabinDoors ∈ cabin → DoorPosition&#10;&#9;@inv11: dom(cabinDoors) = cabin&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  then&#10;  &#9;@act5: cabinDoors ≔ initialDoorPositions&#10;  end&#10;&#10;  event MotorStarts extends MotorStarts&#10;  end&#10;&#10;  event MotorStops extends MotorStops&#10;  end&#10;&#10;  event CabinUpToDown extends CabinUpToDown&#10;  where&#10;  &#9;@grd5: cabinDoors(c) = CLOSED&#10;  end&#10;&#10;  event CabinDownToUp extends CabinDownToUp&#10;  where&#10;  &#9;@grd5: cabinDoors(c) = CLOSED&#10;  end&#10;&#10;  event CabinMovesUp extends CabinMovesUp&#10;  where&#10;  &#9;@grd6: cabinDoors(c) = CLOSED&#10;  end&#10;&#10;  event CabinMovesDown extends CabinMovesDown&#10;  where&#10;  &#9;@grd6: cabinDoors(c) = CLOSED&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="_bYrJsEpjEeiq3NFPgDZfiA" org.eventb.core.target="m2_motor"/>
+<org.eventb.core.seesContext name="_bYrJsUpjEeiq3NFPgDZfiA" org.eventb.core.target="m3_door_context"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_GsagkEpkEeiq3NFPgDZfiA" org.eventb.core.assignment="cabinDoors ≔ initialDoorPositions" org.eventb.core.label="act5:"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_i3K7kEpjEeiq3NFPgDZfiA" org.eventb.core.identifier="cabinPositions"/>
+<org.eventb.core.variable name="_i3LioEpjEeiq3NFPgDZfiA" org.eventb.core.identifier="upShaftCabins"/>
+<org.eventb.core.variable name="_i3LioUpjEeiq3NFPgDZfiA" org.eventb.core.identifier="downShaftCabins"/>
+<org.eventb.core.variable name="_i3LiokpjEeiq3NFPgDZfiA" org.eventb.core.identifier="cabinMotors"/>
+<org.eventb.core.variable name="_i3MJsEpjEeiq3NFPgDZfiA" org.eventb.core.identifier="cabinDoors"/>
+<org.eventb.core.invariant name="_t2becEpjEeiq3NFPgDZfiA" org.eventb.core.label="inv10:" org.eventb.core.predicate="cabinDoors ∈ cabin → DoorPosition"/>
+<org.eventb.core.invariant name="_yTJhYEpjEeiq3NFPgDZfiA" org.eventb.core.label="inv11:" org.eventb.core.predicate="dom(cabinDoors) = cabin"/>
+<org.eventb.core.event name="_XFdLkEpkEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MotorStarts">
+<org.eventb.core.refinesEvent name="_XFdyoEpkEeiq3NFPgDZfiA" org.eventb.core.target="MotorStarts"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_XFeZsEpkEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MotorStops">
+<org.eventb.core.refinesEvent name="_XFeZsUpkEeiq3NFPgDZfiA" org.eventb.core.target="MotorStops"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_XFfAwEpkEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinUpToDown">
+<org.eventb.core.refinesEvent name="_XFfAwUpkEeiq3NFPgDZfiA" org.eventb.core.target="CabinUpToDown"/>
+<org.eventb.core.guard name="_qqKhUEpkEeiq3NFPgDZfiA" org.eventb.core.label="grd5:" org.eventb.core.predicate="cabinDoors(c) = CLOSED"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_XFfAwkpkEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinDownToUp">
+<org.eventb.core.refinesEvent name="_XFfn0EpkEeiq3NFPgDZfiA" org.eventb.core.target="CabinDownToUp"/>
+<org.eventb.core.guard name="_qqLvcEpkEeiq3NFPgDZfiA" org.eventb.core.label="grd5:" org.eventb.core.predicate="cabinDoors(c) = CLOSED"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_XFfn0UpkEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinMovesUp">
+<org.eventb.core.refinesEvent name="_XFgO4EpkEeiq3NFPgDZfiA" org.eventb.core.target="CabinMovesUp"/>
+<org.eventb.core.guard name="_mLOQ0EpkEeiq3NFPgDZfiA" org.eventb.core.label="grd6:" org.eventb.core.predicate="cabinDoors(c) = CLOSED"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_XFgO4UpkEeiq3NFPgDZfiA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinMovesDown">
+<org.eventb.core.refinesEvent name="_XFg18EpkEeiq3NFPgDZfiA" org.eventb.core.target="CabinMovesDown"/>
+<org.eventb.core.guard name="_mLPe8EpkEeiq3NFPgDZfiA" org.eventb.core.label="grd6:" org.eventb.core.predicate="cabinDoors(c) = CLOSED"/>
+</org.eventb.core.event>
 </org.eventb.core.machineFile>
