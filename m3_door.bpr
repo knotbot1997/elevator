@@ -969,4 +969,29 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
 <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
 </org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv11;/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="CABIN,DoorPosition">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="cabin" org.eventb.core.type="ℙ(CABIN)"/>
+<org.eventb.core.prIdent name="initialDoorPositions" org.eventb.core.type="ℙ(CABIN×DoorPosition)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="initialDoorPositions∈cabin → DoorPosition"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv12;/INV"/>
+<org.eventb.core.prProof name="CabinUpToDown/grd5;/WD"/>
+<org.eventb.core.prProof name="CabinDownToUp/grd5;/WD"/>
+<org.eventb.core.prProof name="CabinMovesUp/grd6;/WD"/>
+<org.eventb.core.prProof name="CabinMovesDown/grd6;/WD"/>
+<org.eventb.core.prProof name="DoorClosedToHalf/grd2;/WD"/>
+<org.eventb.core.prProof name="DoorClosedToHalf/inv11;/INV"/>
+<org.eventb.core.prProof name="DoorClosedToHalf/inv12;/INV"/>
+<org.eventb.core.prProof name="DoorHalfToOpen/grd2;/WD"/>
+<org.eventb.core.prProof name="DoorHalfToOpen/inv11;/INV"/>
+<org.eventb.core.prProof name="DoorHalfToOpen/inv12;/INV"/>
+<org.eventb.core.prProof name="DoorOpenToHalf/grd2;/WD"/>
+<org.eventb.core.prProof name="DoorOpenToHalf/inv11;/INV"/>
+<org.eventb.core.prProof name="DoorOpenToHalf/inv12;/INV"/>
+<org.eventb.core.prProof name="DoorHalfToClosed/grd2;/WD"/>
+<org.eventb.core.prProof name="DoorHalfToClosed/inv11;/INV"/>
+<org.eventb.core.prProof name="DoorHalfToClosed/inv12;/INV"/>
 </org.eventb.core.prFile>

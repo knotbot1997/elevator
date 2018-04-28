@@ -1,4 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
-<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524953421471" org.eventb.texttools.text_representation="machine m4_buttons refines m3_door sees m4_buttons_context&#10;&#10;variables cabinPositions upShaftCabins downShaftCabins cabinMotors cabinDoors floorButtons upButtons downButtons&#10;&#10;invariants&#10;  @inv14; upButtons ⊆ 0‥maxFloor−1&#10;  @inv15; downButtons ⊆1‥maxFloor&#10;  @inv16; floorButtons ⊆0‥maxFloor&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;     then&#10;      @act6; upButtons ≔∅&#10;      @act7; downButtons ≔∅&#10;      @act8; floorButtons ≔  ∅&#10;  end&#10;&#10;  event MotorStarts extends MotorStarts&#10;  end&#10;&#10;  event MotorStops extends MotorStops&#10;  end&#10;&#10;  event CabinUpToDown extends CabinUpToDown&#10;  end&#10;&#10;  event CabinDownToUp extends CabinDownToUp&#10;  end&#10;&#10;  event CabinMovesUp extends CabinMovesUp&#10;  end&#10;&#10;  event CabinMovesDown extends CabinMovesDown&#10;  end&#10;&#10;  event DoorClosedToHalf extends DoorClosedToHalf&#10;  end&#10;&#10;  event DoorHalfToOpen extends DoorHalfToOpen&#10;  end&#10;&#10;  event DoorOpenToHalf extends DoorOpenToHalf&#10;  end&#10;&#10;  event DoorHalfToClosed extends DoorHalfToClosed&#10;  end&#10;&#10;  event UserPressesUpButton&#10;   any f&#10;   where&#10;     @grd1; f ∈0‥maxFloor−1&#10;     @grd2; f ∉upButtons&#10;   then&#10;     @act1; upButtons ≔{f} ∪upButtons&#10;  end&#10;&#10;  event UserPressesDownButton&#10;   any f&#10;   where&#10;     @grd1; f ∈1‥maxFloor&#10;     @grd2; f ∉downButtons&#10;   then&#10;     @act1; downButtons ≔{f} ∪downButtons&#10;  end&#10;&#10;  event UserPressesFloorButton&#10;   any f&#10;   where&#10;     @grd1; f ∈ 0‥maxFloor&#10;     @grd2; f ∉floorButtons&#10;   then&#10;     @act1; floorButtons ≔ {f} ∪floorButtons&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="_HUx6UEsjEei_Hq3MZdIUQA" org.eventb.core.target="m3_door"/>
+<org.eventb.core.seesContext name="_HUx6UUsjEei_Hq3MZdIUQA" org.eventb.core.target="m4_buttons_context"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_HU7EQEsjEei_Hq3MZdIUQA" org.eventb.core.assignment="upButtons ≔∅" org.eventb.core.label="act6;"/>
+<org.eventb.core.action name="_HU7EQUsjEei_Hq3MZdIUQA" org.eventb.core.assignment="downButtons ≔∅" org.eventb.core.label="act7;"/>
+<org.eventb.core.action name="_HU7EQksjEei_Hq3MZdIUQA" org.eventb.core.assignment="floorButtons ≔  ∅" org.eventb.core.label="act8;"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_HVE1QEsjEei_Hq3MZdIUQA" org.eventb.core.identifier="cabinPositions"/>
+<org.eventb.core.variable name="_HVE1QUsjEei_Hq3MZdIUQA" org.eventb.core.identifier="upShaftCabins"/>
+<org.eventb.core.variable name="_HVE1QksjEei_Hq3MZdIUQA" org.eventb.core.identifier="downShaftCabins"/>
+<org.eventb.core.variable name="_HVE1Q0sjEei_Hq3MZdIUQA" org.eventb.core.identifier="cabinMotors"/>
+<org.eventb.core.variable name="_HVE1REsjEei_Hq3MZdIUQA" org.eventb.core.identifier="cabinDoors"/>
+<org.eventb.core.variable name="_HVE1RUsjEei_Hq3MZdIUQA" org.eventb.core.identifier="floorButtons"/>
+<org.eventb.core.variable name="_HVE1RksjEei_Hq3MZdIUQA" org.eventb.core.identifier="upButtons"/>
+<org.eventb.core.variable name="_HVOmQEsjEei_Hq3MZdIUQA" org.eventb.core.identifier="downButtons"/>
+<org.eventb.core.invariant name="_HVOmQUsjEei_Hq3MZdIUQA" org.eventb.core.label="inv14;" org.eventb.core.predicate="upButtons ⊆ 0‥maxFloor−1"/>
+<org.eventb.core.invariant name="_HVOmQksjEei_Hq3MZdIUQA" org.eventb.core.label="inv15;" org.eventb.core.predicate="downButtons ⊆1‥maxFloor"/>
+<org.eventb.core.invariant name="_HVOmQ0sjEei_Hq3MZdIUQA" org.eventb.core.label="inv16;" org.eventb.core.predicate="floorButtons ⊆0‥maxFloor"/>
+<org.eventb.core.event name="_pL1M8EsmEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MotorStarts">
+<org.eventb.core.refinesEvent name="_pL1M8UsmEei9k7_WMkrWTQ" org.eventb.core.target="MotorStarts"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pL1M8ksmEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MotorStops">
+<org.eventb.core.refinesEvent name="_pL1M80smEei9k7_WMkrWTQ" org.eventb.core.target="MotorStops"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pL-98EsmEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinUpToDown">
+<org.eventb.core.refinesEvent name="_pL-98UsmEei9k7_WMkrWTQ" org.eventb.core.target="CabinUpToDown"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pL-980smEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinDownToUp">
+<org.eventb.core.refinesEvent name="_pL-99EsmEei9k7_WMkrWTQ" org.eventb.core.target="CabinDownToUp"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pL-99ksmEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinMovesUp">
+<org.eventb.core.refinesEvent name="_pMIH4EsmEei9k7_WMkrWTQ" org.eventb.core.target="CabinMovesUp"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pMIH4ksmEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="CabinMovesDown">
+<org.eventb.core.refinesEvent name="_pMIH40smEei9k7_WMkrWTQ" org.eventb.core.target="CabinMovesDown"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pMIH5UsmEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DoorClosedToHalf">
+<org.eventb.core.refinesEvent name="_hGXsQEsnEei9k7_WMkrWTQ" org.eventb.core.target="DoorClosedToHalf"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pMR44ksmEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DoorHalfToOpen">
+<org.eventb.core.refinesEvent name="_hGg2MEsnEei9k7_WMkrWTQ" org.eventb.core.target="DoorHalfToOpen"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pMbC0EsmEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DoorOpenToHalf">
+<org.eventb.core.refinesEvent name="_hGg2MUsnEei9k7_WMkrWTQ" org.eventb.core.target="DoorOpenToHalf"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pMbC1UsmEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DoorHalfToClosed">
+<org.eventb.core.refinesEvent name="_hGg2MksnEei9k7_WMkrWTQ" org.eventb.core.target="DoorHalfToClosed"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hGg2M0snEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="UserPressesUpButton">
+<org.eventb.core.parameter name="_pMIH5ksmEei9k7_WMkrWTQ" org.eventb.core.identifier="f"/>
+<org.eventb.core.guard name="_pL-98ksmEei9k7_WMkrWTQ" org.eventb.core.label="grd1;" org.eventb.core.predicate="f ∈0‥maxFloor−1"/>
+<org.eventb.core.guard name="_pL-99UsmEei9k7_WMkrWTQ" org.eventb.core.label="grd2;" org.eventb.core.predicate="f ∉upButtons"/>
+<org.eventb.core.action name="_pMR44UsmEei9k7_WMkrWTQ" org.eventb.core.assignment="upButtons ≔{f} ∪upButtons" org.eventb.core.label="act1;"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hGqnMEsnEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="UserPressesDownButton">
+<org.eventb.core.parameter name="_pMR440smEei9k7_WMkrWTQ" org.eventb.core.identifier="f"/>
+<org.eventb.core.guard name="_pMIH4UsmEei9k7_WMkrWTQ" org.eventb.core.label="grd1;" org.eventb.core.predicate="f ∈1‥maxFloor"/>
+<org.eventb.core.guard name="_pMIH5EsmEei9k7_WMkrWTQ" org.eventb.core.label="grd2;" org.eventb.core.predicate="f ∉downButtons"/>
+<org.eventb.core.action name="_pMR45ksmEei9k7_WMkrWTQ" org.eventb.core.assignment="downButtons ≔{f} ∪downButtons" org.eventb.core.label="act1;"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hGqnMUsnEei9k7_WMkrWTQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="UserPressesFloorButton">
+<org.eventb.core.parameter name="_pMbC0UsmEei9k7_WMkrWTQ" org.eventb.core.identifier="f"/>
+<org.eventb.core.guard name="_pMIH50smEei9k7_WMkrWTQ" org.eventb.core.label="grd1;" org.eventb.core.predicate="f ∈ 0‥maxFloor"/>
+<org.eventb.core.guard name="_pMR44EsmEei9k7_WMkrWTQ" org.eventb.core.label="grd2;" org.eventb.core.predicate="f ∉floorButtons"/>
+<org.eventb.core.action name="_pMbC1EsmEei9k7_WMkrWTQ" org.eventb.core.assignment="floorButtons ≔ {f} ∪floorButtons" org.eventb.core.label="act1;"/>
+</org.eventb.core.event>
 </org.eventb.core.machineFile>
