@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="INITIALISATION/inv14:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv15:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv16:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="UserPressesUpButton/inv14:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="UserPressesDownButton/inv15:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="UserPressesFloorButton/grd3:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="UserPressesFloorButton/inv16:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="UserPressesFloorButton/act1;/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="CabinMovesUp/grd7:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="CabinMovesUp/grd8:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="CabinMovesDown/grd7:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="CabinMovesDown/grd8:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="DoorClosedToHalf_up/grd5:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="44" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="DoorClosedToHalf_down/grd5:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="44" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="DoorHalfToOpen_up/inv14:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="45" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="DoorHalfToOpen_up/inv16:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="45" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="DoorHalfToOpen_up/act2:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="45" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="DoorHalfToOpen_up/act3:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="45" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="DoorHalfToOpen_down/inv15:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="DoorHalfToOpen_down/inv16:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="DoorHalfToOpen_down/act2:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="DoorHalfToOpen_down/act3:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv14:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv15:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv16:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UserPressesUpButton/inv14:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UserPressesDownButton/inv15:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UserPressesFloorButton/grd3:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UserPressesFloorButton/inv16:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UserPressesFloorButton/act1;/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinMovesUp/grd7:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinMovesUp/grd8:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinMovesDown/grd7:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CabinMovesDown/grd8:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DoorClosedToHalf_up/grd5:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DoorClosedToHalf_down/grd5:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DoorHalfToOpen_up/inv14:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DoorHalfToOpen_up/inv16:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DoorHalfToOpen_up/act2:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DoorHalfToOpen_up/act3:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DoorHalfToOpen_down/inv15:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DoorHalfToOpen_down/inv16:/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DoorHalfToOpen_down/act2:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DoorHalfToOpen_down/act3:/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="49" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>
