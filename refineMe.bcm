@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scRefinesMachine name="'" org.eventb.core.scTarget="/Elevator/machineName.bcm" org.eventb.core.source="/Elevator/refineMe.bum|org.eventb.core.machineFile#refineMe|org.eventb.core.refinesMachine#_bO1Y4EtuEeicAP1onD6VHA"/>
+<org.eventb.core.scSeesContext name="(" org.eventb.core.scTarget="/Elevator/machineContext.bcc" org.eventb.core.source="/Elevator/refineMe.bum|org.eventb.core.machineFile#refineMe|org.eventb.core.seesContext#_bO1Y4UtuEeicAP1onD6VHA"/>
+<org.eventb.core.scInternalContext name="machineContext"/>
+<org.eventb.core.scEvent name="machineContexu" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/Elevator/refineMe.bum|org.eventb.core.machineFile#refineMe|org.eventb.core.event#'">
+<org.eventb.core.scRefinesEvent name="'" org.eventb.core.scTarget="/Elevator/machineName.bcm|org.eventb.core.scMachineFile#machineName|org.eventb.core.scEvent#machineContexu" org.eventb.core.source="/Elevator/refineMe.bum|org.eventb.core.machineFile#refineMe|org.eventb.core.event#'"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>

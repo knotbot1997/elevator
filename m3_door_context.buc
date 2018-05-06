@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524868990262" org.eventb.texttools.text_representation="context m3_door_context extends m2_motor_context&#10;constants OPEN HALF CLOSED initialDoorPositions&#10;sets DoorPosition&#10;axioms&#10;&#9;@axm1: partition(DoorPosition, {OPEN}, {HALF}, {CLOSED})&#10;&#9;@axm2: initialDoorPositions ∈ cabin → DoorPosition&#10;&#9;@axm3: ∀p·p∈dom(initialDoorPositions)⇒initialDoorPositions(p)=CLOSED&#10;end&#10;" version="3">
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525505724868" org.eventb.texttools.text_representation="context m3_door_context extends m2_motor_context&#10;constants OPEN HALF CLOSED initialDoorPositions&#10;sets DoorPosition&#10;axioms&#10;&#9;@axm1: partition(DoorPosition, {OPEN}, {HALF}, {CLOSED})&#10;&#9;@axm2: initialDoorPositions ∈ CABIN → DoorPosition&#10;&#9;@axm3: ∀p·p∈dom(initialDoorPositions)⇒initialDoorPositions(p)=CLOSED&#10;end&#10;" version="3">
 <org.eventb.core.extendsContext name="_dz8SQEpjEeiq3NFPgDZfiA" org.eventb.core.target="m2_motor_context"/>
 <org.eventb.core.carrierSet name="_SVqREEpjEeiq3NFPgDZfiA" org.eventb.core.identifier="DoorPosition"/>
 <org.eventb.core.constant name="_SVqREUpjEeiq3NFPgDZfiA" org.eventb.core.identifier="OPEN"/>
@@ -7,6 +7,6 @@
 <org.eventb.core.constant name="_SVq4IEpjEeiq3NFPgDZfiA" org.eventb.core.identifier="CLOSED"/>
 <org.eventb.core.axiom name="_SVq4IUpjEeiq3NFPgDZfiA" org.eventb.core.label="axm1:" org.eventb.core.predicate="partition(DoorPosition, {OPEN}, {HALF}, {CLOSED})"/>
 <org.eventb.core.constant name="_-q3E8EpjEeiq3NFPgDZfiA" org.eventb.core.identifier="initialDoorPositions"/>
-<org.eventb.core.axiom name="_-q3E8UpjEeiq3NFPgDZfiA" org.eventb.core.label="axm2:" org.eventb.core.predicate="initialDoorPositions ∈ cabin → DoorPosition"/>
+<org.eventb.core.axiom name="_-q3E8UpjEeiq3NFPgDZfiA" org.eventb.core.label="axm2:" org.eventb.core.predicate="initialDoorPositions ∈ CABIN → DoorPosition"/>
 <org.eventb.core.axiom name="_-q3sAEpjEeiq3NFPgDZfiA" org.eventb.core.label="axm3:" org.eventb.core.predicate="∀p·p∈dom(initialDoorPositions)⇒initialDoorPositions(p)=CLOSED"/>
 </org.eventb.core.contextFile>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525508896410" org.eventb.texttools.text_representation="context m4_context_ext extends m4_buttons_context&#10;axioms&#10;  @axm3: maxFloor = 4&#10;  @axm4: maxCabins = 3&#10;  @axm7: card(CABIN) = 3&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="_3A2ikFA1Eei0oYGWWlCsBA" org.eventb.core.target="m4_buttons_context"/>
+<org.eventb.core.axiom name="_4HaiAFA1Eei0oYGWWlCsBA" org.eventb.core.label="axm3:" org.eventb.core.predicate="maxFloor = 4"/>
+<org.eventb.core.axiom name="_4HaiAVA1Eei0oYGWWlCsBA" org.eventb.core.label="axm4:" org.eventb.core.predicate="maxCabins = 3"/>
+<org.eventb.core.axiom name="_4HbJEFA1Eei0oYGWWlCsBA" org.eventb.core.label="axm7:" org.eventb.core.predicate="card(CABIN) = 3"/>
+</org.eventb.core.contextFile>

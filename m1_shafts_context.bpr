@@ -3,20 +3,17 @@
 <org.eventb.core.prProof name="axm7:/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p1,p2" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="CABIN">
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p1)" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p1)" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
 <org.eventb.core.prIdent name="p1" org.eventb.core.type="CABIN"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p5">
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p2)" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees p2)" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
 <org.eventb.core.prIdent name="p2" org.eventb.core.type="CABIN"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p8,p9">
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p7,p8">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p1"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -27,39 +24,34 @@
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="cabin" org.eventb.core.type="ℙ(CABIN)"/>
 <org.eventb.core.prIdent name="initialPositions" org.eventb.core.type="ℙ(CABIN×ℤ)"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="p2∈dom(initialPositions)∧¬p1=p2⇒initialPositions∈CABIN ⇸ ℤ">
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="initialPositions∈CABIN → ℕ"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="p2∈dom(initialPositions)∧¬p1=p2⇒initialPositions∈CABIN ⇸ ℤ">
 <org.eventb.core.prIdent name="p1" org.eventb.core.type="CABIN"/>
 <org.eventb.core.prIdent name="p2" org.eventb.core.type="CABIN"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="initialPositions∈CABIN ⇸ ℤ"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬p1=p2">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="initialPositions∈CABIN ⇸ ℤ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬p1=p2">
 <org.eventb.core.prIdent name="p1" org.eventb.core.type="CABIN"/>
 <org.eventb.core.prIdent name="p2" org.eventb.core.type="CABIN"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀p1⦂CABIN·p1∈dom(initialPositions)⇒(∀p2⦂CABIN·p2∈dom(initialPositions)∧p1≠p2⇒initialPositions∈CABIN ⇸ ℤ)"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀p2⦂CABIN·p2∈dom(initialPositions)∧¬p1=p2⇒initialPositions∈CABIN ⇸ ℤ">
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀p2⦂CABIN·p2∈dom(initialPositions)∧¬p1=p2⇒initialPositions∈CABIN ⇸ ℤ">
 <org.eventb.core.prIdent name="p1" org.eventb.core.type="CABIN"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="initialPositions∈cabin → ℕ"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p1∈dom(initialPositions)⇒(∀p2⦂CABIN·p2∈dom(initialPositions)∧¬p1=p2⇒initialPositions∈CABIN ⇸ ℤ)">
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="p1∈dom(initialPositions)⇒(∀p2⦂CABIN·p2∈dom(initialPositions)∧¬p1=p2⇒initialPositions∈CABIN ⇸ ℤ)">
 <org.eventb.core.prIdent name="p1" org.eventb.core.type="CABIN"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀p1⦂CABIN·p1∈dom(initialPositions)⇒(∀p2⦂CABIN·p2∈dom(initialPositions)∧¬p1=p2⇒initialPositions∈CABIN ⇸ ℤ)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="p1∈dom(initialPositions)">
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="p1∈dom(initialPositions)">
 <org.eventb.core.prIdent name="p1" org.eventb.core.type="CABIN"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="cabin⊆CABIN"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="p2∈dom(initialPositions)">
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="p2∈dom(initialPositions)">
 <org.eventb.core.prIdent name="p2" org.eventb.core.type="CABIN"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
 </org.eventb.core.prProof>
 </org.eventb.core.prFile>

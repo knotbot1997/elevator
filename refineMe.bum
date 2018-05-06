@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1524983428070" org.eventb.texttools.text_representation="machine refineMe&#10;refines machineName&#10;sees machineContext&#10;&#10;events&#10;  event INITIALISATION&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="_bO1Y4EtuEeicAP1onD6VHA" org.eventb.core.target="machineName"/>
+<org.eventb.core.seesContext name="_bO1Y4UtuEeicAP1onD6VHA" org.eventb.core.target="machineContext"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+</org.eventb.core.machineFile>
