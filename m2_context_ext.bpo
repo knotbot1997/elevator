@@ -18,23 +18,18 @@
 <org.eventb.core.poPredicate name="initialMotorStatf" org.eventb.core.predicate="partition(MOTOR_STATE,{ON},{OFF})" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_Gay_8E-lEeiBZf5vjLxqhQ"/>
 <org.eventb.core.poPredicate name="initialMotorStatg" org.eventb.core.predicate="initialMotorState∈CABIN → MOTOR_STATE" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_GaznAE-lEeiBZf5vjLxqhQ"/>
 <org.eventb.core.poPredicate name="initialMotorStath" org.eventb.core.predicate="∀c⦂CABIN·c∈CABIN⇒initialMotorState(c)=OFF" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_Ga0OEE-lEeiBZf5vjLxqhQ"/>
-<org.eventb.core.poIdentifier name="DoorPosition" org.eventb.core.type="ℙ(DoorPosition)"/>
-<org.eventb.core.poIdentifier name="CLOSED" org.eventb.core.type="DoorPosition"/>
-<org.eventb.core.poIdentifier name="HALF" org.eventb.core.type="DoorPosition"/>
-<org.eventb.core.poIdentifier name="OPEN" org.eventb.core.type="DoorPosition"/>
-<org.eventb.core.poIdentifier name="initialDoorPositions" org.eventb.core.type="ℙ(CABIN×DoorPosition)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="axm3:/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Elevator/m3_door_context.bpo|org.eventb.core.poFile#m3_door_context|org.eventb.core.poPredicateSet#HYPm1_shafts_contexv"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀p⦂CABIN·p∈dom(initialDoorPositions)⇒initialDoorPositions∈CABIN ⇸ DoorPosition" org.eventb.core.source="/Elevator/m3_door_context.buc|org.eventb.core.contextFile#m3_door_context|org.eventb.core.axiom#_-q3sAEpjEeiq3NFPgDZfiA"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Elevator/m3_door_context.buc|org.eventb.core.contextFile#m3_door_context|org.eventb.core.axiom#_-q3sAEpjEeiq3NFPgDZfiA"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Elevator/m3_door_context.bpo|org.eventb.core.poFile#m3_door_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Elevator/m3_door_context.bpo|org.eventb.core.poFile#m3_door_context|org.eventb.core.poPredicateSet#HYPm1_shafts_contexv"/>
+<org.eventb.core.poSequent name="axm7:/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Elevator/m2_context_ext.bpo|org.eventb.core.poFile#m2_context_ext|org.eventb.core.poPredicateSet#HYPm1_shafts_contexv"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(CABIN)" org.eventb.core.source="/Elevator/m2_context_ext.buc|org.eventb.core.contextFile#m2_context_ext|org.eventb.core.axiom#_x7hAcVA1Eei0oYGWWlCsBA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Elevator/m2_context_ext.buc|org.eventb.core.contextFile#m2_context_ext|org.eventb.core.axiom#_x7hAcVA1Eei0oYGWWlCsBA"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Elevator/m2_context_ext.bpo|org.eventb.core.poFile#m2_context_ext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Elevator/m2_context_ext.bpo|org.eventb.core.poFile#m2_context_ext|org.eventb.core.poPredicateSet#HYPm1_shafts_contexv"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="HYPm1_shafts_contexv" org.eventb.core.parentSet="/Elevator/m3_door_context.bpo|org.eventb.core.poFile#m3_door_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(DoorPosition,{OPEN},{HALF},{CLOSED})" org.eventb.core.source="/Elevator/m3_door_context.buc|org.eventb.core.contextFile#m3_door_context|org.eventb.core.axiom#_SVq4IUpjEeiq3NFPgDZfiA"/>
-<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="initialDoorPositions∈CABIN → DoorPosition" org.eventb.core.source="/Elevator/m3_door_context.buc|org.eventb.core.contextFile#m3_door_context|org.eventb.core.axiom#_-q3E8UpjEeiq3NFPgDZfiA"/>
+<org.eventb.core.poPredicateSet name="HYPm1_shafts_contexv" org.eventb.core.parentSet="/Elevator/m2_context_ext.bpo|org.eventb.core.poFile#m2_context_ext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="maxFloor=4" org.eventb.core.source="/Elevator/m2_context_ext.buc|org.eventb.core.contextFile#m2_context_ext|org.eventb.core.axiom#_x7gZYFA1Eei0oYGWWlCsBA"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="maxCabins=3" org.eventb.core.source="/Elevator/m2_context_ext.buc|org.eventb.core.contextFile#m2_context_ext|org.eventb.core.axiom#_x7hAcFA1Eei0oYGWWlCsBA"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m3_door_context.bpo|org.eventb.core.poFile#m3_door_context|org.eventb.core.poPredicateSet#HYPm1_shafts_contexv" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀p⦂CABIN·p∈dom(initialDoorPositions)⇒initialDoorPositions(p)=CLOSED" org.eventb.core.source="/Elevator/m3_door_context.buc|org.eventb.core.contextFile#m3_door_context|org.eventb.core.axiom#_-q3sAEpjEeiq3NFPgDZfiA"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m2_context_ext.bpo|org.eventb.core.poFile#m2_context_ext|org.eventb.core.poPredicateSet#HYPm1_shafts_contexv" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card(CABIN)=3" org.eventb.core.source="/Elevator/m2_context_ext.buc|org.eventb.core.contextFile#m2_context_ext|org.eventb.core.axiom#_x7hAcVA1Eei0oYGWWlCsBA"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="5">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="CABIN" org.eventb.core.type="ℙ(CABIN)"/>
 <org.eventb.core.poIdentifier name="initialPositions" org.eventb.core.type="ℙ(CABIN×ℤ)"/>
 <org.eventb.core.poIdentifier name="maxCabins" org.eventb.core.type="ℤ"/>
@@ -11,13 +11,13 @@
 <org.eventb.core.poPredicate name="initialPositionw" org.eventb.core.predicate="initialPositions∈CABIN → ℕ" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#__xz-8EqwEeiq3NFPgDZfiA"/>
 <org.eventb.core.poPredicate name="initialPositionx" org.eventb.core.predicate="∀i⦂ℤ·i∈ran(initialPositions)⇒i≤maxFloor" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_LvSk8EquEeiq3NFPgDZfiA"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="axm7:/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="5">
+<org.eventb.core.poSequent name="axm7:/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Elevator/m1_shafts_context.bpo|org.eventb.core.poFile#m1_shafts_context|org.eventb.core.poPredicateSet#ABSHYP"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀p1⦂CABIN·p1∈dom(initialPositions)⇒(∀p2⦂CABIN·p2∈dom(initialPositions)∧p1≠p2⇒initialPositions∈CABIN ⇸ ℤ)" org.eventb.core.source="/Elevator/m1_shafts_context.buc|org.eventb.core.contextFile#m1_shafts_context|org.eventb.core.axiom#_7S-aYEonEeiq3NFPgDZfiA"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Elevator/m1_shafts_context.buc|org.eventb.core.contextFile#m1_shafts_context|org.eventb.core.axiom#_7S-aYEonEeiq3NFPgDZfiA"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Elevator/m1_shafts_context.bpo|org.eventb.core.poFile#m1_shafts_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Elevator/m1_shafts_context.bpo|org.eventb.core.poFile#m1_shafts_context|org.eventb.core.poPredicateSet#ABSHYP"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m1_shafts_context.bpo|org.eventb.core.poFile#m1_shafts_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m1_shafts_context.bpo|org.eventb.core.poFile#m1_shafts_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="∀p1⦂CABIN·p1∈dom(initialPositions)⇒(∀p2⦂CABIN·p2∈dom(initialPositions)∧p1≠p2⇒initialPositions(p1)≠initialPositions(p2))" org.eventb.core.source="/Elevator/m1_shafts_context.buc|org.eventb.core.contextFile#m1_shafts_context|org.eventb.core.axiom#_7S-aYEonEeiq3NFPgDZfiA"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

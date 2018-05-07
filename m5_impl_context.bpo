@@ -42,17 +42,5 @@
 <org.eventb.core.poPredicate name="initial_floor_buttonz" org.eventb.core.predicate="initial_floor_buttons∈0 ‥ maxCabins − 1 → (0 ‥ maxFloor → buttonState)" org.eventb.core.source="/Elevator/m4_buttons_context.buc|org.eventb.core.contextFile#m4_buttons_context|org.eventb.core.axiom#_asjp8FILEeimbprtmpEGlw"/>
 <org.eventb.core.poPredicate name="initial_floor_button{" org.eventb.core.predicate="∀b⦂ℙ(ℤ×buttonState)·b∈ran(initial_floor_buttons)⇒(∀f⦂ℤ·f∈dom(b)⇒b(f)=INACTIVE)" org.eventb.core.source="/Elevator/m4_buttons_context.buc|org.eventb.core.contextFile#m4_buttons_context|org.eventb.core.axiom#_yvL8gFILEeimbprtmpEGlw"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="axm7:/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Elevator/m4_context_ext.bpo|org.eventb.core.poFile#m4_context_ext|org.eventb.core.poPredicateSet#HYPm4_buttons_contexv"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(CABIN)" org.eventb.core.source="/Elevator/m4_context_ext.buc|org.eventb.core.contextFile#m4_context_ext|org.eventb.core.axiom#_4HbJEFA1Eei0oYGWWlCsBA"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Elevator/m4_context_ext.buc|org.eventb.core.contextFile#m4_context_ext|org.eventb.core.axiom#_4HbJEFA1Eei0oYGWWlCsBA"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Elevator/m4_context_ext.bpo|org.eventb.core.poFile#m4_context_ext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Elevator/m4_context_ext.bpo|org.eventb.core.poFile#m4_context_ext|org.eventb.core.poPredicateSet#HYPm4_buttons_contexv"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="HYPm4_buttons_contexv" org.eventb.core.parentSet="/Elevator/m4_context_ext.bpo|org.eventb.core.poFile#m4_context_ext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="maxFloor=4" org.eventb.core.source="/Elevator/m4_context_ext.buc|org.eventb.core.contextFile#m4_context_ext|org.eventb.core.axiom#_4HaiAFA1Eei0oYGWWlCsBA"/>
-<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="maxCabins=3" org.eventb.core.source="/Elevator/m4_context_ext.buc|org.eventb.core.contextFile#m4_context_ext|org.eventb.core.axiom#_4HaiAVA1Eei0oYGWWlCsBA"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m4_context_ext.bpo|org.eventb.core.poFile#m4_context_ext|org.eventb.core.poPredicateSet#HYPm4_buttons_contexv" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card(CABIN)=3" org.eventb.core.source="/Elevator/m4_context_ext.buc|org.eventb.core.contextFile#m4_context_ext|org.eventb.core.axiom#_4HbJEFA1Eei0oYGWWlCsBA"/>
-</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m5_impl_context.bpo|org.eventb.core.poFile#m5_impl_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
 </org.eventb.core.poFile>

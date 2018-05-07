@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525508009706" org.eventb.texttools.text_representation="context m4_buttons_context extends m3_door_context&#10;constants initial_floor_buttons&#10;axioms&#10;&#9;@axm4: initial_floor_buttons ∈ CABIN → ℙ(0‥maxFloor)&#10;&#9;@axm5: ∀c·c∈CABIN⇒initial_floor_buttons(c)=∅&#10;&#10;end&#10;" version="3">
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525715272479" org.eventb.texttools.text_representation="context m4_buttons_context extends m3_door_context&#10;constants ACTIVE INACTIVE initial_floor_buttons initial_up_buttons initial_down_buttons initial_cabin_numbers&#10;sets buttonState&#10;axioms&#10;&#9;@axm6: partition(buttonState,{ACTIVE}, {INACTIVE})&#10;&#9;@axm7: initial_up_buttons ∈ 0‥maxFloor−1 → buttonState&#10;&#9;@axm8: ∀s·s∈ran(initial_up_buttons)⇒s=INACTIVE&#10;&#9;@axm9: initial_down_buttons ∈ 1‥maxFloor → buttonState&#10;&#9;@axm10: ∀s·s∈ran(initial_down_buttons)⇒s=INACTIVE&#10;&#9;@axm11: initial_cabin_numbers ∈ CABIN ⤖0‥maxCabins−1&#10;&#9;@axm12: initial_floor_buttons ∈ 0‥maxCabins−1→(0‥maxFloor→buttonState)&#10;&#9;@axm13: ∀b·b∈ran(initial_floor_buttons) ⇒( ∀f·f∈dom(b)⇒b(f)=INACTIVE )&#10;end&#10;" version="3">
 <org.eventb.core.extendsContext name="_z_NBYFAzEei0oYGWWlCsBA" org.eventb.core.target="m3_door_context"/>
+<org.eventb.core.constant name="_nm0PAFINEeimbprtmpEGlw" org.eventb.core.identifier="ACTIVE"/>
+<org.eventb.core.constant name="_nm0PAVINEeimbprtmpEGlw" org.eventb.core.identifier="INACTIVE"/>
 <org.eventb.core.constant name="_F6PgEFAzEei0oYGWWlCsBA" org.eventb.core.identifier="initial_floor_buttons"/>
-<org.eventb.core.axiom name="_F6QHIFAzEei0oYGWWlCsBA" org.eventb.core.label="axm4:" org.eventb.core.predicate="initial_floor_buttons ∈ CABIN → ℙ(0‥maxFloor)"/>
-<org.eventb.core.axiom name="_F6RVQFAzEei0oYGWWlCsBA" org.eventb.core.label="axm5:" org.eventb.core.predicate="∀c·c∈CABIN⇒initial_floor_buttons(c)=∅"/>
+<org.eventb.core.constant name="_Paw4gFH-EeimbprtmpEGlw" org.eventb.core.identifier="initial_up_buttons"/>
+<org.eventb.core.constant name="_Paw4gVH-EeimbprtmpEGlw" org.eventb.core.identifier="initial_down_buttons"/>
+<org.eventb.core.axiom name="_jS-ZEVH-EeimbprtmpEGlw" org.eventb.core.label="axm6:" org.eventb.core.predicate="partition(buttonState,{ACTIVE}, {INACTIVE})"/>
+<org.eventb.core.axiom name="_jS_AIFH-EeimbprtmpEGlw" org.eventb.core.label="axm7:" org.eventb.core.predicate="initial_up_buttons ∈ 0‥maxFloor−1 → buttonState"/>
+<org.eventb.core.axiom name="_namVwFH-EeimbprtmpEGlw" org.eventb.core.label="axm8:" org.eventb.core.predicate="∀s·s∈ran(initial_up_buttons)⇒s=INACTIVE"/>
+<org.eventb.core.axiom name="_namVwVH-EeimbprtmpEGlw" org.eventb.core.label="axm9:" org.eventb.core.predicate="initial_down_buttons ∈ 1‥maxFloor → buttonState"/>
+<org.eventb.core.axiom name="_jS-ZEFH-EeimbprtmpEGlw" org.eventb.core.label="axm10:" org.eventb.core.predicate="∀s·s∈ran(initial_down_buttons)⇒s=INACTIVE"/>
+<org.eventb.core.constant name="__bo2cFIKEeimbprtmpEGlw" org.eventb.core.identifier="initial_cabin_numbers"/>
+<org.eventb.core.axiom name="__bo2cVIKEeimbprtmpEGlw" org.eventb.core.label="axm11:" org.eventb.core.predicate="initial_cabin_numbers ∈ CABIN ⤖0‥maxCabins−1"/>
+<org.eventb.core.axiom name="_asjp8FILEeimbprtmpEGlw" org.eventb.core.label="axm12:" org.eventb.core.predicate="initial_floor_buttons ∈ 0‥maxCabins−1→(0‥maxFloor→buttonState)"/>
+<org.eventb.core.axiom name="_yvL8gFILEeimbprtmpEGlw" org.eventb.core.label="axm13:" org.eventb.core.predicate="∀b·b∈ran(initial_floor_buttons) ⇒( ∀f·f∈dom(b)⇒b(f)=INACTIVE )"/>
+<org.eventb.core.carrierSet name="_IoPBgFIOEeimbprtmpEGlw" org.eventb.core.identifier="buttonState"/>
 </org.eventb.core.contextFile>

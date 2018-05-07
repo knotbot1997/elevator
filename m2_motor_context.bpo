@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="7">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="7">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="CABIN" org.eventb.core.type="ℙ(CABIN)"/>
 <org.eventb.core.poIdentifier name="initialPositions" org.eventb.core.type="ℙ(CABIN×ℤ)"/>
 <org.eventb.core.poIdentifier name="maxCabins" org.eventb.core.type="ℤ"/>
@@ -16,7 +16,7 @@
 <org.eventb.core.poIdentifier name="ON" org.eventb.core.type="MOTOR_STATE"/>
 <org.eventb.core.poIdentifier name="initialMotorState" org.eventb.core.type="ℙ(CABIN×MOTOR_STATE)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="axm3:/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="7">
+<org.eventb.core.poSequent name="axm3:/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Elevator/m2_motor_context.bpo|org.eventb.core.poFile#m2_motor_context|org.eventb.core.poPredicateSet#HYPm1_shafts_contexv"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c⦂CABIN·c∈CABIN⇒c∈dom(initialMotorState)∧initialMotorState∈CABIN ⇸ MOTOR_STATE" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_Ga0OEE-lEeiBZf5vjLxqhQ"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_Ga0OEE-lEeiBZf5vjLxqhQ"/>
@@ -26,7 +26,7 @@
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(MOTOR_STATE,{ON},{OFF})" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_Gay_8E-lEeiBZf5vjLxqhQ"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="initialMotorState∈CABIN → MOTOR_STATE" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_GaznAE-lEeiBZf5vjLxqhQ"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m2_motor_context.bpo|org.eventb.core.poFile#m2_motor_context|org.eventb.core.poPredicateSet#HYPm1_shafts_contexv" org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m2_motor_context.bpo|org.eventb.core.poFile#m2_motor_context|org.eventb.core.poPredicateSet#HYPm1_shafts_contexv" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀c⦂CABIN·c∈CABIN⇒initialMotorState(c)=OFF" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_Ga0OEE-lEeiBZf5vjLxqhQ"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

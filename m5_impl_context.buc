@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525705094237" org.eventb.texttools.text_representation="context m5_impl_context extends m4_buttons_context&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="_etoY4FHuEei0oYGWWlCsBA" org.eventb.core.target="m4_buttons_context"/>
+</org.eventb.core.contextFile>
