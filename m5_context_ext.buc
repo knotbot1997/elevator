@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525845836284" org.eventb.texttools.text_representation="context m5_context_ext extends m5_impl_context&#10;constants initial_floor_buttons&#10;axioms&#10;  @axm12: initial_floor_buttons ∈ 0‥maxCabins−1→(0‥maxFloor→buttonState)&#10;  @axm13: ∀b·b∈ran(initial_floor_buttons) ⇒( ∀f·f∈dom(b)⇒b(f)=INACTIVE )&#10;  @axm14: maxFloor = 4&#10;  @axm15: maxCabins = 3&#10;  @axm16: card(CABIN) = 3&#10;end&#10;" version="3">
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525881430864" org.eventb.texttools.text_representation="context m5_context_ext extends m5_impl_context&#10;axioms&#10;  @axm14: maxFloor = 4&#10;  @axm15: maxCabins = 3&#10;  @axm16: card(CABIN) = 3&#10;end&#10;" version="3">
 <org.eventb.core.extendsContext name="_xq3dcFM3EeimbprtmpEGlw" org.eventb.core.target="m5_impl_context"/>
-<org.eventb.core.axiom name="_YEgwgFNGEeimbprtmpEGlw" org.eventb.core.label="axm12:" org.eventb.core.predicate="initial_floor_buttons ∈ 0‥maxCabins−1→(0‥maxFloor→buttonState)"/>
-<org.eventb.core.axiom name="_YEgwgVNGEeimbprtmpEGlw" org.eventb.core.label="axm13:" org.eventb.core.predicate="∀b·b∈ran(initial_floor_buttons) ⇒( ∀f·f∈dom(b)⇒b(f)=INACTIVE )"/>
 <org.eventb.core.axiom name="_xq3dcVM3EeimbprtmpEGlw" org.eventb.core.label="axm14:" org.eventb.core.predicate="maxFloor = 4"/>
 <org.eventb.core.axiom name="_xq4EgFM3EeimbprtmpEGlw" org.eventb.core.label="axm15:" org.eventb.core.predicate="maxCabins = 3"/>
 <org.eventb.core.axiom name="_xq4rkFM3EeimbprtmpEGlw" org.eventb.core.label="axm16:" org.eventb.core.predicate="card(CABIN) = 3"/>
-<org.eventb.core.constant name="_VMFK0FNGEeimbprtmpEGlw" org.eventb.core.identifier="initial_floor_buttons"/>
 </org.eventb.core.contextFile>

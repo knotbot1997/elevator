@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="4">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="4">
+<org.eventb.core.poFile org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="6">
 <org.eventb.core.poIdentifier name="CABIN" org.eventb.core.type="ℙ(CABIN)"/>
 <org.eventb.core.poIdentifier name="initialPositions" org.eventb.core.type="ℙ(CABIN×ℤ)"/>
 <org.eventb.core.poIdentifier name="maxCabins" org.eventb.core.type="ℤ"/>
@@ -27,18 +27,22 @@
 <org.eventb.core.poPredicate name="initialDoorPositionu" org.eventb.core.predicate="initialDoorPositions∈CABIN → DoorPosition" org.eventb.core.source="/Elevator/m3_door_context.buc|org.eventb.core.contextFile#m3_door_context|org.eventb.core.axiom#_-q3E8UpjEeiq3NFPgDZfiA"/>
 <org.eventb.core.poPredicate name="initialDoorPositionv" org.eventb.core.predicate="∀p⦂CABIN·p∈dom(initialDoorPositions)⇒initialDoorPositions(p)=CLOSED" org.eventb.core.source="/Elevator/m3_door_context.buc|org.eventb.core.contextFile#m3_door_context|org.eventb.core.axiom#_-q3sAEpjEeiq3NFPgDZfiA"/>
 <org.eventb.core.poIdentifier name="buttonState" org.eventb.core.type="ℙ(buttonState)"/>
+<org.eventb.core.poIdentifier name="initial_floor_buttons" org.eventb.core.type="ℙ(CABIN×ℙ(ℤ))"/>
+<org.eventb.core.poPredicate name="initial_floor_buttont" org.eventb.core.predicate="initial_floor_buttons∈CABIN → ℙ(0 ‥ maxFloor)" org.eventb.core.source="/Elevator/m4_buttons_context.buc|org.eventb.core.contextFile#m4_buttons_context|org.eventb.core.axiom#_I2YDsFOZEeimX_E_GTEpbQ"/>
 <org.eventb.core.poIdentifier name="ACTIVE" org.eventb.core.type="buttonState"/>
 <org.eventb.core.poIdentifier name="INACTIVE" org.eventb.core.type="buttonState"/>
 <org.eventb.core.poIdentifier name="initial_cabin_numbers" org.eventb.core.type="ℙ(CABIN×ℤ)"/>
 <org.eventb.core.poIdentifier name="initial_down_buttons" org.eventb.core.type="ℙ(ℤ×buttonState)"/>
+<org.eventb.core.poIdentifier name="initial_floor_buttons_array" org.eventb.core.type="ℙ(ℤ×ℙ(ℤ×buttonState))"/>
 <org.eventb.core.poIdentifier name="initial_up_buttons" org.eventb.core.type="ℙ(ℤ×buttonState)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m5_impl_context.bpo|org.eventb.core.poFile#m5_impl_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m5_impl_context.bpo|org.eventb.core.poFile#m5_impl_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="6">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(buttonState,{ACTIVE},{INACTIVE})" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmBMoFM-EeimbprtmpEGlw"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="initial_up_buttons∈0 ‥ maxFloor − 1 → buttonState" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmBzsFM-EeimbprtmpEGlw"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀s⦂buttonState·s∈ran(initial_up_buttons)⇒s=INACTIVE" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmCawFM-EeimbprtmpEGlw"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="initial_down_buttons∈1 ‥ maxFloor → buttonState" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmCawVM-EeimbprtmpEGlw"/>
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀s⦂buttonState·s∈ran(initial_down_buttons)⇒s=INACTIVE" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmDB0FM-EeimbprtmpEGlw"/>
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="initial_cabin_numbers∈CABIN ⤖ 0 ‥ maxCabins − 1" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmDo4FM-EeimbprtmpEGlw"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="initial_floor_buttons_array∈0 ‥ maxCabins − 1 → (0 ‥ maxFloor → buttonState)" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_Os_40FOZEeimX_E_GTEpbQ"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

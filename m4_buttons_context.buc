@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525845634863" org.eventb.texttools.text_representation="context m4_buttons_context extends m3_door_context&#10;sets buttonState&#10;end&#10;" version="3">
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525881382370" org.eventb.texttools.text_representation="context m4_buttons_context extends m3_door_context&#10;constants initial_floor_buttons&#10;sets buttonState&#10;axioms&#10;  @axm8: initial_floor_buttons ∈ CABIN → ℙ(0‥maxFloor)&#10;end&#10;" version="3">
 <org.eventb.core.extendsContext name="_z_NBYFAzEei0oYGWWlCsBA" org.eventb.core.target="m3_door_context"/>
 <org.eventb.core.carrierSet name="_IoPBgFIOEeimbprtmpEGlw" org.eventb.core.identifier="buttonState"/>
+<org.eventb.core.constant name="_GSDFwFOZEeimX_E_GTEpbQ" org.eventb.core.identifier="initial_floor_buttons"/>
+<org.eventb.core.axiom name="_I2YDsFOZEeimX_E_GTEpbQ" org.eventb.core.label="axm8:" org.eventb.core.predicate="initial_floor_buttons ∈ CABIN → ℙ(0‥maxFloor)"/>
 </org.eventb.core.contextFile>
