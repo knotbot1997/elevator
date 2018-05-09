@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0"/>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m5_context_ext.bpo|org.eventb.core.poFile#m5_context_ext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poFile org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="6">
+<org.eventb.core.poIdentifier name="CABIN" org.eventb.core.type="ℙ(CABIN)"/>
+<org.eventb.core.poIdentifier name="initialPositions" org.eventb.core.type="ℙ(CABIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="maxCabins" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="maxFloor" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="initialPositiont" org.eventb.core.predicate="maxFloor∈ℕ1" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_ztHRsEomEeiq3NFPgDZfiA"/>
+<org.eventb.core.poPredicate name="initialPositionu" org.eventb.core.predicate="maxCabins∈ℕ1" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_vtWp0UewEeitPrt4T1qAPA"/>
+<org.eventb.core.poPredicate name="initialPositionv" org.eventb.core.predicate="finite(CABIN)" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_FI690U-kEeiBZf5vjLxqhQ"/>
+<org.eventb.core.poPredicate name="initialPositionw" org.eventb.core.predicate="initialPositions∈CABIN → ℕ" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#__xz-8EqwEeiq3NFPgDZfiA"/>
+<org.eventb.core.poPredicate name="initialPositionx" org.eventb.core.predicate="∀i⦂ℤ·i∈ran(initialPositions)⇒i≤maxFloor" org.eventb.core.source="/Elevator/m0_cabins_context.buc|org.eventb.core.contextFile#m0_cabins_context|org.eventb.core.axiom#_LvSk8EquEeiq3NFPgDZfiA"/>
+<org.eventb.core.poPredicate name="initialPositiony" org.eventb.core.predicate="∀p1⦂CABIN·p1∈dom(initialPositions)⇒(∀p2⦂CABIN·p2∈dom(initialPositions)∧p1≠p2⇒initialPositions(p1)≠initialPositions(p2))" org.eventb.core.source="/Elevator/m1_shafts_context.buc|org.eventb.core.contextFile#m1_shafts_context|org.eventb.core.axiom#_7S-aYEonEeiq3NFPgDZfiA"/>
+<org.eventb.core.poIdentifier name="MOTOR_STATE" org.eventb.core.type="ℙ(MOTOR_STATE)"/>
+<org.eventb.core.poIdentifier name="OFF" org.eventb.core.type="MOTOR_STATE"/>
+<org.eventb.core.poIdentifier name="ON" org.eventb.core.type="MOTOR_STATE"/>
+<org.eventb.core.poIdentifier name="initialMotorState" org.eventb.core.type="ℙ(CABIN×MOTOR_STATE)"/>
+<org.eventb.core.poPredicate name="initialMotorStatf" org.eventb.core.predicate="partition(MOTOR_STATE,{ON},{OFF})" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_Gay_8E-lEeiBZf5vjLxqhQ"/>
+<org.eventb.core.poPredicate name="initialMotorStatg" org.eventb.core.predicate="initialMotorState∈CABIN → MOTOR_STATE" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_GaznAE-lEeiBZf5vjLxqhQ"/>
+<org.eventb.core.poPredicate name="initialMotorStath" org.eventb.core.predicate="∀c⦂CABIN·c∈CABIN⇒initialMotorState(c)=OFF" org.eventb.core.source="/Elevator/m2_motor_context.buc|org.eventb.core.contextFile#m2_motor_context|org.eventb.core.axiom#_Ga0OEE-lEeiBZf5vjLxqhQ"/>
+<org.eventb.core.poIdentifier name="DoorPosition" org.eventb.core.type="ℙ(DoorPosition)"/>
+<org.eventb.core.poIdentifier name="CLOSED" org.eventb.core.type="DoorPosition"/>
+<org.eventb.core.poIdentifier name="HALF" org.eventb.core.type="DoorPosition"/>
+<org.eventb.core.poIdentifier name="OPEN" org.eventb.core.type="DoorPosition"/>
+<org.eventb.core.poIdentifier name="initialDoorPositions" org.eventb.core.type="ℙ(CABIN×DoorPosition)"/>
+<org.eventb.core.poPredicate name="initialDoorPositiont" org.eventb.core.predicate="partition(DoorPosition,{OPEN},{HALF},{CLOSED})" org.eventb.core.source="/Elevator/m3_door_context.buc|org.eventb.core.contextFile#m3_door_context|org.eventb.core.axiom#_SVq4IUpjEeiq3NFPgDZfiA"/>
+<org.eventb.core.poPredicate name="initialDoorPositionu" org.eventb.core.predicate="initialDoorPositions∈CABIN → DoorPosition" org.eventb.core.source="/Elevator/m3_door_context.buc|org.eventb.core.contextFile#m3_door_context|org.eventb.core.axiom#_-q3E8UpjEeiq3NFPgDZfiA"/>
+<org.eventb.core.poPredicate name="initialDoorPositionv" org.eventb.core.predicate="∀p⦂CABIN·p∈dom(initialDoorPositions)⇒initialDoorPositions(p)=CLOSED" org.eventb.core.source="/Elevator/m3_door_context.buc|org.eventb.core.contextFile#m3_door_context|org.eventb.core.axiom#_-q3sAEpjEeiq3NFPgDZfiA"/>
+<org.eventb.core.poIdentifier name="buttonState" org.eventb.core.type="ℙ(buttonState)"/>
+<org.eventb.core.poIdentifier name="ACTIVE" org.eventb.core.type="buttonState"/>
+<org.eventb.core.poIdentifier name="INACTIVE" org.eventb.core.type="buttonState"/>
+<org.eventb.core.poIdentifier name="initial_cabin_numbers" org.eventb.core.type="ℙ(CABIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="initial_down_buttons" org.eventb.core.type="ℙ(ℤ×buttonState)"/>
+<org.eventb.core.poIdentifier name="initial_up_buttons" org.eventb.core.type="ℙ(ℤ×buttonState)"/>
+<org.eventb.core.poPredicate name="initial_cabin_numbert" org.eventb.core.predicate="partition(buttonState,{ACTIVE},{INACTIVE})" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmBMoFM-EeimbprtmpEGlw"/>
+<org.eventb.core.poPredicate name="initial_cabin_numberu" org.eventb.core.predicate="initial_up_buttons∈0 ‥ maxFloor − 1 → buttonState" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmBzsFM-EeimbprtmpEGlw"/>
+<org.eventb.core.poPredicate name="initial_cabin_numberv" org.eventb.core.predicate="∀s⦂buttonState·s∈ran(initial_up_buttons)⇒s=INACTIVE" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmCawFM-EeimbprtmpEGlw"/>
+<org.eventb.core.poPredicate name="initial_cabin_numberw" org.eventb.core.predicate="initial_down_buttons∈1 ‥ maxFloor → buttonState" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmCawVM-EeimbprtmpEGlw"/>
+<org.eventb.core.poPredicate name="initial_cabin_numberx" org.eventb.core.predicate="∀s⦂buttonState·s∈ran(initial_down_buttons)⇒s=INACTIVE" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmDB0FM-EeimbprtmpEGlw"/>
+<org.eventb.core.poPredicate name="initial_cabin_numbery" org.eventb.core.predicate="initial_cabin_numbers∈CABIN ⤖ 0 ‥ maxCabins − 1" org.eventb.core.source="/Elevator/m5_impl_context.buc|org.eventb.core.contextFile#m5_impl_context|org.eventb.core.axiom#_vmDo4FM-EeimbprtmpEGlw"/>
+<org.eventb.core.poIdentifier name="initial_floor_buttons" org.eventb.core.type="ℙ(ℤ×ℙ(ℤ×buttonState))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="axm13:/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Elevator/m5_context_ext.bpo|org.eventb.core.poFile#m5_context_ext|org.eventb.core.poPredicateSet#HYPm4_buttons_contexu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀b⦂ℙ(ℤ×buttonState)·b∈ran(initial_floor_buttons)⇒(∀f⦂ℤ·f∈dom(b)⇒b∈ℤ ⇸ buttonState)" org.eventb.core.source="/Elevator/m5_context_ext.buc|org.eventb.core.contextFile#m5_context_ext|org.eventb.core.axiom#_YEgwgVNGEeimbprtmpEGlw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Elevator/m5_context_ext.buc|org.eventb.core.contextFile#m5_context_ext|org.eventb.core.axiom#_YEgwgVNGEeimbprtmpEGlw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Elevator/m5_context_ext.bpo|org.eventb.core.poFile#m5_context_ext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Elevator/m5_context_ext.bpo|org.eventb.core.poFile#m5_context_ext|org.eventb.core.poPredicateSet#HYPm4_buttons_contexu"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm16:/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Elevator/m5_context_ext.bpo|org.eventb.core.poFile#m5_context_ext|org.eventb.core.poPredicateSet#HYPm4_buttons_contexx"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(CABIN)" org.eventb.core.source="/Elevator/m5_context_ext.buc|org.eventb.core.contextFile#m5_context_ext|org.eventb.core.axiom#_xq4rkFM3EeimbprtmpEGlw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Elevator/m5_context_ext.buc|org.eventb.core.contextFile#m5_context_ext|org.eventb.core.axiom#_xq4rkFM3EeimbprtmpEGlw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Elevator/m5_context_ext.bpo|org.eventb.core.poFile#m5_context_ext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Elevator/m5_context_ext.bpo|org.eventb.core.poFile#m5_context_ext|org.eventb.core.poPredicateSet#HYPm4_buttons_contexx"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYPm4_buttons_contexu" org.eventb.core.parentSet="/Elevator/m5_context_ext.bpo|org.eventb.core.poFile#m5_context_ext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="initial_floor_buttons∈0 ‥ maxCabins − 1 → (0 ‥ maxFloor → buttonState)" org.eventb.core.source="/Elevator/m5_context_ext.buc|org.eventb.core.contextFile#m5_context_ext|org.eventb.core.axiom#_YEgwgFNGEeimbprtmpEGlw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPm4_buttons_contexx" org.eventb.core.parentSet="/Elevator/m5_context_ext.bpo|org.eventb.core.poFile#m5_context_ext|org.eventb.core.poPredicateSet#HYPm4_buttons_contexu" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="∀b⦂ℙ(ℤ×buttonState)·b∈ran(initial_floor_buttons)⇒(∀f⦂ℤ·f∈dom(b)⇒b(f)=INACTIVE)" org.eventb.core.source="/Elevator/m5_context_ext.buc|org.eventb.core.contextFile#m5_context_ext|org.eventb.core.axiom#_YEgwgVNGEeimbprtmpEGlw"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="maxFloor=4" org.eventb.core.source="/Elevator/m5_context_ext.buc|org.eventb.core.contextFile#m5_context_ext|org.eventb.core.axiom#_xq3dcVM3EeimbprtmpEGlw"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="maxCabins=3" org.eventb.core.source="/Elevator/m5_context_ext.buc|org.eventb.core.contextFile#m5_context_ext|org.eventb.core.axiom#_xq4EgFM3EeimbprtmpEGlw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Elevator/m5_context_ext.bpo|org.eventb.core.poFile#m5_context_ext|org.eventb.core.poPredicateSet#HYPm4_buttons_contexx" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="card(CABIN)=3" org.eventb.core.source="/Elevator/m5_context_ext.buc|org.eventb.core.contextFile#m5_context_ext|org.eventb.core.axiom#_xq4rkFM3EeimbprtmpEGlw"/>
+</org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>
