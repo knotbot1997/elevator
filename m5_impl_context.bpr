@@ -865,4 +865,310 @@
 <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
 <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
 </org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm21:/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="c,f" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="CABIN,buttonState">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(MOTOR_STATE,{ON},{OFF}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p6,p7"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p6,p7"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DoorPosition,{OPEN},{HALF},{CLOSED}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p9,p10,p11,p12"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p9,p10,p11,p12"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(buttonState,{ACTIVE},{INACTIVE}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p13,p14"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p13,p14"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p25">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p20" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p22" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p18" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p25" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p29">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p21" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p23" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p24" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p29" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p30">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees c,f)" org.eventb.core.prGoal="p30" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p33" org.eventb.core.prHyps="p32">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p33" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with buttonState={ACTIVE,INACTIVE}" org.eventb.core.prHyps="p13">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p35" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p37" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="DESELECT3" org.eventb.core.prHyps="p35,p37,p3"/>
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p40">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p40" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p41">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p41" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p42">
+<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p42" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p43">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with buttonState={ACTIVE,INACTIVE}" org.eventb.core.prHyps="p13">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p35" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p37" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="DESELECT3" org.eventb.core.prHyps="p35,p37,p3"/>
+<org.eventb.core.prRule name="r10" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for initial_cabin_numbers(c)" org.eventb.core.prGoal="p43" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p43" org.eventb.core.prHyps="p44">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p43" org.eventb.core.prHyps="p39">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p44">
+<org.eventb.core.prRule name="r11" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p44" org.eventb.core.prHyps="p44"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e1"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p45">
+<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p45" org.eventb.core.prHyps="p3"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p46">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees c,f)" org.eventb.core.prGoal="p46" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p47">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p47" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p49" org.eventb.core.prHyps="p32,p48">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p49" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p50">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with buttonState={ACTIVE,INACTIVE}" org.eventb.core.prHyps="p13">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p35" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p37" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="DESELECT3" org.eventb.core.prHyps="p35,p37,p3"/>
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p50" org.eventb.core.prHyps="p4">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p40">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p40" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p41">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p41" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p51">
+<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p51" org.eventb.core.prHyps="p4"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="ACTIVE" org.eventb.core.type="buttonState"/>
+<org.eventb.core.prIdent name="INACTIVE" org.eventb.core.type="buttonState"/>
+<org.eventb.core.prIdent name="initial_cabin_numbers" org.eventb.core.type="ℙ(CABIN×ℤ)"/>
+<org.eventb.core.prIdent name="initial_floor_buttons" org.eventb.core.type="ℙ(CABIN×ℙ(ℤ))"/>
+<org.eventb.core.prIdent name="initial_floor_buttons_array" org.eventb.core.type="ℙ(ℤ×ℙ(ℤ×buttonState))"/>
+<org.eventb.core.prIdent name="maxCabins" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="maxFloor" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀c⦂CABIN·initialMotorState(c)=OFF">
+<org.eventb.core.prIdent name="OFF" org.eventb.core.type="MOTOR_STATE"/>
+<org.eventb.core.prIdent name="initialMotorState" org.eventb.core.type="ℙ(CABIN×MOTOR_STATE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀p1⦂CABIN·p1∈dom(initialPositions)⇒(∀p2⦂CABIN·p2∈dom(initialPositions)∧¬p1=p2⇒¬initialPositions(p1)=initialPositions(p2))">
+<org.eventb.core.prIdent name="initialPositions" org.eventb.core.type="ℙ(CABIN×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="f ↦ ACTIVE∈initial_floor_buttons_array(initial_cabin_numbers(c))">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="(∀c⦂CABIN,f⦂ℤ·f∈0 ‥ maxFloor⇒c∈dom(initial_cabin_numbers)∧initial_cabin_numbers∈CABIN ⇸ ℤ∧initial_cabin_numbers(c)∈dom(initial_floor_buttons_array)∧initial_floor_buttons_array∈ℤ ⇸ ℙ(ℤ × buttonState))∧(∀c⦂CABIN,f⦂ℤ·f∈0 ‥ maxFloor∧f ↦ ACTIVE∈initial_floor_buttons_array(initial_cabin_numbers(c))⇒c∈dom(initial_floor_buttons)∧initial_floor_buttons∈CABIN ⇸ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="initial_down_buttons∈0 ‥ maxFloor → {ACTIVE,INACTIVE}">
+<org.eventb.core.prIdent name="initial_down_buttons" org.eventb.core.type="ℙ(ℤ×buttonState)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="c∈dom(initial_floor_buttons)∧initial_floor_buttons∈CABIN ⇸ ℙ(ℤ)">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀c⦂CABIN·c∈CABIN⇒initial_floor_buttons(c)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="initial_floor_buttons∈CABIN → ℙ(0 ‥ maxFloor)"/>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="initial_cabin_numbers(c)∈0 ‥ maxCabins − 1">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀c1⦂CABIN,c2⦂CABIN·c1∈CABIN∧c2∈CABIN∧c1≠c2⇒initial_cabin_numbers(c1)≠initial_cabin_numbers(c2)"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀c⦂CABIN·⊤⇒initialMotorState(c)=OFF">
+<org.eventb.core.prIdent name="OFF" org.eventb.core.type="MOTOR_STATE"/>
+<org.eventb.core.prIdent name="initialMotorState" org.eventb.core.type="ℙ(CABIN×MOTOR_STATE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀c⦂CABIN,f⦂ℤ·f∈0 ‥ maxFloor⇒c∈dom(initial_cabin_numbers)∧initial_cabin_numbers∈CABIN ⇸ ℤ∧initial_cabin_numbers(c)∈dom(initial_floor_buttons_array)∧initial_floor_buttons_array∈ℤ ⇸ ℙ(ℤ × buttonState)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬ACTIVE=INACTIVE"/>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="initial_up_buttons∈0 ‥ maxFloor → {ACTIVE,INACTIVE}">
+<org.eventb.core.prIdent name="initial_up_buttons" org.eventb.core.type="ℙ(ℤ×buttonState)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="c∈CABIN">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀c1⦂CABIN,c2⦂CABIN·¬c1=c2⇒¬initial_cabin_numbers(c1)=initial_cabin_numbers(c2)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="initial_floor_buttons_array∈0 ‥ maxCabins − 1 → (0 ‥ maxFloor → buttonState)"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀c⦂CABIN·⊤⇒initial_floor_buttons(c)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬OPEN=CLOSED">
+<org.eventb.core.prIdent name="CLOSED" org.eventb.core.type="DoorPosition"/>
+<org.eventb.core.prIdent name="OPEN" org.eventb.core.type="DoorPosition"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="f∈0 ‥ maxFloor">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀c⦂CABIN·⊤⇒(∀f⦂ℤ·f∈0 ‥ maxFloor⇒c∈dom(initial_cabin_numbers)∧initial_cabin_numbers∈CABIN ⇸ ℤ∧initial_cabin_numbers(c)∈dom(initial_floor_buttons_array)∧initial_floor_buttons_array∈ℤ ⇸ ℙ(ℤ × buttonState))∧(∀f⦂ℤ·f∈0 ‥ maxFloor∧f ↦ ACTIVE∈initial_floor_buttons_array(initial_cabin_numbers(c))⇒c∈dom(initial_floor_buttons)∧initial_floor_buttons∈CABIN ⇸ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀c1⦂CABIN,c2⦂CABIN·c1∈CABIN∧c2∈CABIN∧¬c1=c2⇒¬initial_cabin_numbers(c1)=initial_cabin_numbers(c2)"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬HALF=CLOSED">
+<org.eventb.core.prIdent name="CLOSED" org.eventb.core.type="DoorPosition"/>
+<org.eventb.core.prIdent name="HALF" org.eventb.core.type="DoorPosition"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀c⦂CABIN·initial_floor_buttons(c)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="DoorPosition={OPEN,HALF,CLOSED}">
+<org.eventb.core.prIdent name="CLOSED" org.eventb.core.type="DoorPosition"/>
+<org.eventb.core.prIdent name="DoorPosition" org.eventb.core.type="ℙ(DoorPosition)"/>
+<org.eventb.core.prIdent name="HALF" org.eventb.core.type="DoorPosition"/>
+<org.eventb.core.prIdent name="OPEN" org.eventb.core.type="DoorPosition"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="initial_cabin_numbers(c)∈dom(initial_floor_buttons_array)">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀p1⦂CABIN·p1∈dom(initialPositions)⇒(∀p2⦂CABIN·p2∈dom(initialPositions)∧p1≠p2⇒initialPositions(p1)≠initialPositions(p2))">
+<org.eventb.core.prIdent name="initialPositions" org.eventb.core.type="ℙ(CABIN×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(DoorPosition,{OPEN},{HALF},{CLOSED})">
+<org.eventb.core.prIdent name="CLOSED" org.eventb.core.type="DoorPosition"/>
+<org.eventb.core.prIdent name="DoorPosition" org.eventb.core.type="ℙ(DoorPosition)"/>
+<org.eventb.core.prIdent name="HALF" org.eventb.core.type="DoorPosition"/>
+<org.eventb.core.prIdent name="OPEN" org.eventb.core.type="DoorPosition"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="c∈dom(initial_cabin_numbers)">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀c1⦂CABIN,c2⦂CABIN·⊤∧⊤∧¬c1=c2⇒¬initial_cabin_numbers(c1)=initial_cabin_numbers(c2)"/>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="initial_floor_buttons_array∈ℤ ⇸ ℙ(ℤ × buttonState)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="buttonState={ACTIVE,INACTIVE}"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀c⦂CABIN·c∈CABIN⇒(∀f⦂ℤ·f∈0 ‥ maxFloor⇒c∈dom(initial_cabin_numbers)∧initial_cabin_numbers∈CABIN ⇸ ℤ∧initial_cabin_numbers(c)∈dom(initial_floor_buttons_array)∧initial_floor_buttons_array∈ℤ ⇸ ℙ(ℤ × buttonState))∧(∀f⦂ℤ·f∈0 ‥ maxFloor∧f ↦ ACTIVE∈initial_floor_buttons_array(initial_cabin_numbers(c))⇒c∈dom(initial_floor_buttons)∧initial_floor_buttons∈CABIN ⇸ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬OPEN=HALF">
+<org.eventb.core.prIdent name="HALF" org.eventb.core.type="DoorPosition"/>
+<org.eventb.core.prIdent name="OPEN" org.eventb.core.type="DoorPosition"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀c⦂CABIN·c∈CABIN⇒initialMotorState(c)=OFF">
+<org.eventb.core.prIdent name="OFF" org.eventb.core.type="MOTOR_STATE"/>
+<org.eventb.core.prIdent name="initialMotorState" org.eventb.core.type="ℙ(CABIN×MOTOR_STATE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="c∈dom(initial_floor_buttons)">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="initial_cabin_numbers∈CABIN → 0 ‥ maxCabins − 1"/>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="initial_up_buttons∈0 ‥ maxFloor → buttonState">
+<org.eventb.core.prIdent name="initial_up_buttons" org.eventb.core.type="ℙ(ℤ×buttonState)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="initial_floor_buttons∈CABIN ⇸ ℙ(ℤ)"/>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="c∈dom(initial_cabin_numbers)∧initial_cabin_numbers∈CABIN ⇸ ℤ∧initial_cabin_numbers(c)∈dom(initial_floor_buttons_array)∧initial_floor_buttons_array∈ℤ ⇸ ℙ(ℤ × buttonState)">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(buttonState,{ACTIVE},{INACTIVE})"/>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="initial_cabin_numbers∈CABIN ⇸ ℤ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(MOTOR_STATE,{ON},{OFF})">
+<org.eventb.core.prIdent name="MOTOR_STATE" org.eventb.core.type="ℙ(MOTOR_STATE)"/>
+<org.eventb.core.prIdent name="OFF" org.eventb.core.type="MOTOR_STATE"/>
+<org.eventb.core.prIdent name="ON" org.eventb.core.type="MOTOR_STATE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="f∈0 ‥ maxFloor⇒c∈dom(initial_cabin_numbers)∧initial_cabin_numbers∈CABIN ⇸ ℤ∧initial_cabin_numbers(c)∈dom(initial_floor_buttons_array)∧initial_floor_buttons_array∈ℤ ⇸ ℙ(ℤ × buttonState)">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬ON=OFF">
+<org.eventb.core.prIdent name="OFF" org.eventb.core.type="MOTOR_STATE"/>
+<org.eventb.core.prIdent name="ON" org.eventb.core.type="MOTOR_STATE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="initial_down_buttons∈0 ‥ maxFloor → buttonState">
+<org.eventb.core.prIdent name="initial_down_buttons" org.eventb.core.type="ℙ(ℤ×buttonState)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MOTOR_STATE={ON,OFF}">
+<org.eventb.core.prIdent name="MOTOR_STATE" org.eventb.core.type="ℙ(MOTOR_STATE)"/>
+<org.eventb.core.prIdent name="OFF" org.eventb.core.type="MOTOR_STATE"/>
+<org.eventb.core.prIdent name="ON" org.eventb.core.type="MOTOR_STATE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀c⦂CABIN·c∈CABIN⇒(∀f⦂ℤ·(f∈0 ‥ maxFloor⇒c∈dom(initial_cabin_numbers)∧initial_cabin_numbers∈CABIN ⇸ ℤ∧initial_cabin_numbers(c)∈dom(initial_floor_buttons_array)∧initial_floor_buttons_array∈ℤ ⇸ ℙ(ℤ × buttonState))∧(f∈0 ‥ maxFloor∧f ↦ ACTIVE∈initial_floor_buttons_array(initial_cabin_numbers(c))⇒c∈dom(initial_floor_buttons)∧initial_floor_buttons∈CABIN ⇸ ℙ(ℤ)))"/>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="initial_floor_buttons_array∈0 ‥ maxCabins − 1 → (0 ‥ maxFloor → {ACTIVE,INACTIVE})"/>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀c⦂CABIN,f⦂ℤ·f∈0 ‥ maxFloor∧f ↦ ACTIVE∈initial_floor_buttons_array(initial_cabin_numbers(c))⇒c∈dom(initial_floor_buttons)∧initial_floor_buttons∈CABIN ⇸ ℙ(ℤ)"/>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="f∈0 ‥ maxFloor∧f ↦ ACTIVE∈initial_floor_buttons_array(initial_cabin_numbers(c))⇒c∈dom(initial_floor_buttons)∧initial_floor_buttons∈CABIN ⇸ ℙ(ℤ)">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CABIN"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="CABIN"/>
+<org.eventb.core.prExpr name="e1" org.eventb.core.expression="0 ‥ maxCabins − 1"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r11" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r9" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL3:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r10" org.eventb.core.prRID="org.eventb.core.seqprover.funImgGoal"/>
+</org.eventb.core.prProof>
 </org.eventb.core.prFile>
